@@ -1,6 +1,5 @@
-<img src="https://elegarage.fr/icon.svg" alt="img" width="100"/>
 
-## Eliott Lesimple
+<h2><img src="https://elegarage.fr/icon.svg" alt="img" width="33"/> Eliott Lesimple</h2>
 
 **`Développeur Front-end React/Typescript`**
 À 35 ans, après avoir été un véritable couteau suisse dans les industries graphiques, où j'ai occupé divers postes tels que chef de projet, graphiste / opérateur prépresse, j'ai décidé de me lancer dans une nouvelle aventure et commence ainsi une reconversion en tant que développeur Front-end.
