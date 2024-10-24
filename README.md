@@ -16,28 +16,6 @@ Mon objectif professionnel est simple : apprendre chaque jour, progresser contin
 
 ![Tailwind](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white)![Styled Components](https://img.shields.io/badge/Styled%20Components-DB7093?style=for-the-badge&logo=styledcomponents&logoColor=white)![Redux](https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white)![Zustand](https://img.shields.io/badge/Zustand-000000?style=for-the-badge&logo=javascript&logoColor=white)![i18Next](https://img.shields.io/badge/i18Next-007ACC?style=for-the-badge&logo=javascript&logoColor=white)
 
-## 📂 Mes projets
-
-### 🚀 Projets Terminés ... mais toujours en évolution !
-
-- **ele-starter-kit** - _Un template React et TypeScript pour démarrer vos projets._ <br/>
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lesimpleliott/Starter-kit)[![NPM](https://img.shields.io/badge/NPM-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/ele-starter-kit) ou `npm i ele-starter-kit`
-
-- **Tekkare** - _Création d'un Dashboard à partir de données fictives_ <br/>
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lesimpleliott/Tekkare-dashboard)[![Demo](https://img.shields.io/badge/Demo-4A90E2?style=for-the-badge&logo=github&logoColor=white)](https://tekkare.elegarage.fr)
-
-- **Kat & Elio - Wedding Pictures** - _Le site qui présente les photos de mon mariage ♥️_ <br/>
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lesimpleliott/KE-Wedding-Pictures)[![Demo](https://img.shields.io/badge/Demo-4A90E2?style=for-the-badge&logo=github&logoColor=white)](https:/demo.katelio.fr) `mot de passe : demo`
-
-- **Mon portfolio** - _eLeGarage.fr_ <br/>
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lesimpleliott/MyPortfolio)[![Online](https://img.shields.io/badge/Website-4E8C2B?style=for-the-badge&logo=internet-explorer&logoColor=white)](https://elegarage.fr)
-
-### ⏳ Projets en Cours
-
-- **Hôtel de la Plage - Houlgate** - _Création du site de l'hôtel_ <br/>
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lesimpleliott/HDP-Houlgate)[![Demo](https://img.shields.io/badge/Demo-4A90E2?style=for-the-badge&logo=github&logoColor=white)](https://hdp-houlgate.vercel.app/)
-
-
 ## 📫 Me contacter
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lesimpleliott/)[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lesimpleliott)[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:eliott@elegarage.fr)
