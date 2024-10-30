@@ -1,11 +1,3 @@
-
-<h2><img src="https://elegarage.fr/icon.svg" alt="img" width="25" /> Eliott Lesimple</h2>
-**Développeur Front-end React/Typescript**
-
-À 35 ans, après avoir été un véritable couteau suisse dans les industries graphiques, où j'ai occupé divers postes tels que chef de projet, graphiste / opérateur prépresse, j'ai décidé de me lancer dans une nouvelle aventure et commence ainsi une reconversion en tant que développeur Front-end.
-
-Mon objectif professionnel est simple : apprendre chaque jour, progresser continuellement et devenir un développeur front-end polyvalent, doté de compétences solides.
-
 ## 📦 Ma stack
 
 ## ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=lesimpleliott&layout=compact&theme=dark)
