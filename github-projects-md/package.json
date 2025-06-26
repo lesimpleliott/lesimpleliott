@@ -1,0 +1,11 @@
+{
+  "name": "github-md-generator",
+  "version": "1.0.0",
+  "description": "Script de génération de markdown pour projets GitHub",
+  "main": "scripts/generateMarkdown.js",
+  "scripts": {
+    "start": "node scripts/generateMarkdown.js"
+  },
+  "author": "eLeGarage",
+  "license": "MIT"
+}
