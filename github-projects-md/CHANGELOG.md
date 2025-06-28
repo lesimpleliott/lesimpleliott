@@ -1,16 +1,16 @@
-## `2025-06-26 - feat(github-projects-md): initial script setup with dynamic stack detection and markdown generation`
+## 2025-06-28 - chore(structure): initial project setup and scaffolding
 
-- **Création du dossier** `github-projects-md/` pour isoler la logique de génération.
-- Mise en place de la structure modulaire :
-  - `scripts/generateMarkdown.js` – orchestrateur principal
-  - `scripts/generateSummary.js` – génération du sommaire
-  - `scripts/generateDetails.js` – génération de la liste détaillée
-  - `scripts/utils.js` – fonctions utilitaires (slugify, detection de stack)
-  - `scripts/getBadgeMap.js` – mapping des stacks vers des badges visuels
-  - `scripts/getCategories.js` – regroupement des projets par catégories
-- **Détection des stacks**
-  - Système de priorité entre `next` > `react` > `javascript`
-  - Priorité sur `typescript` > `javascript` selon les extensions présentes
-  - Gestion CSS vs SCSS vs SASS avec priorité dégressive
-  - Inclusion automatique de dépendances comme `zustand`, `redux`, `electron`, `i18next`, etc.
-  - Ordre d’affichage 100% basé sur l’ordre des clés dans `getBadgeMap.js` (DRY)
+**🆕 Ajouts**
+- Création de l’arborescence complète du projet `github-projects-md`
+- Initialisation du `package.json` avec les scripts `start`, `fetch` et `generate`
+- Ajout des fichiers vides avec commentaires pour :
+  - les scénarios (`scenarioAuto`, `scenarioEdit`, `generateReadme`)
+  - les modules cœur (`fetchRepos`, `parseRepos`, etc.)
+  - les utilitaires (`githubClient`, `log`, `promptYesNo`, etc.)
+  - les configurations (`paths`, `badgeMap`, `defaults`)
+- Mise en place du template de base `base.md` avec balises `<!-- SOMMAIRE -->` et `<!-- DETAILS -->`
+- Fichier `projects.json` vide prêt à être rempli
+
+**🗃 Structure**
+Le projet est contenu dans le dossier `github-projects-md`, placé sous `/lesimpleliott`.
+Le README final sera généré à la racine (`/lesimpleliott/README.md`).

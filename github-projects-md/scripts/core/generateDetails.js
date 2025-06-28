@@ -1,0 +1,1 @@
+// Génère la section détaillée

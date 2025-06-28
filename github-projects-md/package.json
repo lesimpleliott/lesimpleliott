@@ -1,11 +1,15 @@
 {
-  "name": "github-md-generator",
+  "name": "github-readme-generator",
   "version": "1.0.0",
-  "description": "Script de génération de markdown pour projets GitHub",
-  "main": "scripts/generateMarkdown.js",
+  "description": "Outil de génération automatique du README de profil GitHub",
+  "type": "module",
   "scripts": {
-    "start": "node scripts/generateMarkdown.js"
+    "start": "node scripts/scenario/scenarioAuto.js",
+    "fetch": "node scripts/scenario/scenarioEdit.js",
+    "generate": "node scripts/scenario/generateReadme.js"
   },
-  "author": "eLeGarage",
-  "license": "MIT"
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "minimist": "^1.2.8"
+  }
 }

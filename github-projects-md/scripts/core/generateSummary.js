@@ -1,0 +1,1 @@
+// Génère le sommaire Markdown
