@@ -1,3 +1,25 @@
+## 2025-06-29 - feat(core): improve summary and details generation
+
+Création des fonctions `generateSummary` et `generateDetails`
+
+- **🔄 Summary (Sommaire)**
+  - Ajout d’un regroupement par `categoryManual`, avec fallback vers une catégorie inconnue.
+  - Respect de l’ordre défini dans `categoryMap`.
+  - Tri alphabétique des projets à l’intérieur de chaque groupe.
+  - Fusion de la colonne "Statut" directement dans le titre du projet :
+    - 🔒 si privé
+    - 📦 si archivé
+  - Lien du sommaire vers l’ancre du bloc correspondant dans la liste détaillée (`#category-slug-project-slug`).
+  - Ajout d’une légende en bas de sommaire pour les icônes utilisées.
+- **📋 Détails**
+  - Génération d’ancre HTML (`<a id="...">`) pour chaque projet, utilisée dans les liens du sommaire.
+  - Ajout conditionnel des icônes 🔒 (privé) et 📦 (archivé) dans le titre.
+  - Badge de stack basé sur `stackManual` en utilisant `badgeMap` :
+    - Affichage d’un badge si la techno est connue
+    - Affichage en texte brut sinon
+  - Ajout d’un lien vers le site (`websiteUrl`) ou une preview (`previewUrl`) selon les données disponibles.
+  - Ajout d’une icône 📋 dans la console bash pour faciliter le copier/coller.
+
 ## 2025-06-28 - feat(core): implement fetch logic with manual field preservation
 
 Implémentation complète de la commande `fetch` permettant d'extraire les dépôts GitHub d’un utilisateur (ou d’un repo précis) et de mettre à jour le fichier `projects.json`.

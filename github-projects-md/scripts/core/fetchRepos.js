@@ -106,10 +106,10 @@ const updateProjectsJson = async (repos) => {
         spinner.succeed(`🔄 Mis à jour : ${name}`);
       } else {
         projects.push(projectData);
-        spinner.succeed(`✅ Ajouté : ${name}`);
+        spinner.succeed(`Ajouté : ${name}`);
       }
     } catch (err) {
-      spinner.fail(`❌ ${name} : ${err.message}`);
+      spinner.fail(`${name} : ${err.message}`);
     }
   }
 

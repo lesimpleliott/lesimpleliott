@@ -1,5 +1,6 @@
 export const categoryMap = {
-  default: "🚀 Projets principaux",
+  pro: "⚡️ Projets professionnels",
+  default: "🚀 Projets personnels",
   SCPT: "⚙️ Scripting",
   SB: "🧪 SandBox",
   OC: "🎓 OpenClassrooms",
