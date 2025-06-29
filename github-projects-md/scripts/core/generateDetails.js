@@ -1,6 +1,7 @@
 import { badgeMap } from "../config/badgeMap.js";
 import { categoryMap } from "../config/defaults.js";
 import { slugify } from "../utils/slugify.js";
+import { sortAlphaNumeric } from "../utils/sortAlphaNumeric.js";
 
 /**
  * Génère la liste détaillée des projets
@@ -31,7 +32,7 @@ export const generateDetails = (projects) => {
       const emoji =
         key === "unknown" ? "❓" : categoryMap[key]?.slice(0, 2) || "📁";
 
-      const sortedRepos = repos.sort((a, b) => a.name.localeCompare(b.name));
+      const sortedRepos = [...repos].sort(sortAlphaNumeric);
 
       return sortedRepos.map(
         ({

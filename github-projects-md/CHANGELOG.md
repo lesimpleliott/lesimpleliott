@@ -1,3 +1,39 @@
+## 2025-06-29 - feat(rename): update GitHub repos from JSON with smart patching
+
+Ajout de la commande `npm run rename` permettant de **synchroniser les dépôts GitHub** avec les données locales du `projects.json`.
+
+- 🧠 Mise à jour intelligente des dépôts
+  - Le script lit `projects.json` et met à jour chaque dépôt GitHub uniquement si :
+    - le nom a changé (`name`)
+    - la description a changé (`description`)
+    - le statut `archived` a changé
+  - Si le repo est archivé, il est automatiquement **désarchivé**, modifié, puis **réarchivé** si besoin.
+  - L’URL du dépôt est automatiquement mise à jour si le nom a été modifié sur GitHub.
+- 🔁 Mise à jour bidirectionnelle
+  - Les changements appliqués sur GitHub sont **reflétés localement dans `projects.json`** :
+    - mise à jour de l’URL (`url`)
+    - confirmation du statut `archived`
+- ✅ Console améliorée
+  - Ajout de `ora` pour un affichage dynamique :
+    - 🔒 Ignoré si non propriétaire
+    - ✔ Mis à jour avec succès
+    - ℹ Aucune modification
+    - ❌ Erreur ou accès refusé
+- 📦 Refactorisation
+  - Création de `updateRepoData.js` pour centraliser la logique API GitHub
+  - `scenarioRename.js` devient un orchestrateur propre, maintenable
+- 🧩 Détection stack améliorée
+  - Priorisation intelligente des technologies :
+    - `Next JS` > `React`
+    - `TypeScript` > `JavaScript`
+    - `SASS` > `SCSS` > `CSS`
+    - `Tailwind CSS` et `Styled Components` prioritaires sur tous les préprocesseurs CSS
+- 🔠 Tri alphanumérique cohérent
+  Facteur c ommun extrait dans `utils/sortAlphaNumeric.js`
+- Utilisé da ns `generateSummary` et `generateDetails` pour un tri plus humain (1, 2, …, 10 au lieu de 1, 10, 2…)
+- 📍 Amélioration UX terminal
+  Affichage cliquable du chemin vers le `README.md` généré
+
 ## 2025-06-29 - feat(core): improve summary and details generation
 
 Création des fonctions `generateSummary` et `generateDetails`

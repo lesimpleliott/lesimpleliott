@@ -1,5 +1,6 @@
 import { categoryMap } from "../config/defaults.js";
 import { slugify } from "../utils/slugify.js";
+import { sortAlphaNumeric } from "../utils/sortAlphaNumeric.js";
 
 /**
  * Génère le sommaire des projets sous forme de table Markdown
@@ -41,7 +42,7 @@ export const generateSummary = (projects) => {
 
     rows.push(`| **${label}** |   |`);
 
-    const sortedRepos = [...repos].sort((a, b) => a.name.localeCompare(b.name));
+    const sortedRepos = [...repos].sort(sortAlphaNumeric);
 
     sortedRepos.forEach(
       ({ name, url, previewUrl, websiteUrl, visibility, archived }) => {
