@@ -35,6 +35,7 @@
 | [`lesimpleliott`](#lesimpleliott) | [![GitHub](https://img.shields.io/badge/-GitHub-000?style=flat&logo=github)](https://github.com/lesimpleliott/lesimpleliott) |
 | [`ExportAlbums`](#exportalbums) | [![GitHub](https://img.shields.io/badge/-GitHub-000?style=flat&logo=github)](https://github.com/lesimpleliott/SCPT_ExportAlbums) |
 | [`Folder-Structure-Generatooooor`](#folder-structure-generatooooor) | [![GitHub](https://img.shields.io/badge/-GitHub-000?style=flat&logo=github)](https://github.com/lesimpleliott/SCPT_Folder-Structure-Generatooooor) |
+| [`Illustrator-Tools`](#illustrator-tools) | [![GitHub](https://img.shields.io/badge/-GitHub-000?style=flat&logo=github)](https://github.com/lesimpleliott/SCPT_Illustrator-Tools) |
 | [`PDF2JPG`](#pdf2jpg) | [![GitHub](https://img.shields.io/badge/-GitHub-000?style=flat&logo=github)](https://github.com/lesimpleliott/SCPT_PDF2JPG) |
 | [`Starter-kit-React`](#starter-kit-react) | [![GitHub](https://img.shields.io/badge/-GitHub-000?style=flat&logo=github)](https://github.com/lesimpleliott/SCPT_Starter-kit-React) |
 | [`WebScreen-Automator`](#webscreen-automator) | [![GitHub](https://img.shields.io/badge/-GitHub-000?style=flat&logo=github)](https://github.com/lesimpleliott/SCPT_WebScreen-Automator) |
@@ -179,6 +180,17 @@ Script pour générer l'arborescence d'un dossier
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000)
 ```bash
 git clone https://github.com/lesimpleliott/SCPT_Folder-Structure-Generatooooor.git
+```
+---
+
+<a id="illustrator-tools"></a>
+### ⚙️ [Illustrator-Tools](https://github.com/lesimpleliott/SCPT_Illustrator-Tools) 
+Collection de scripts JavaScript pour **Adobe Illustrator CC 2020+**, conçus pour améliorer le flux de travail
+
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000)
+```bash
+git clone https://github.com/lesimpleliott/SCPT_Illustrator-Tools.git
 ```
 ---
 
