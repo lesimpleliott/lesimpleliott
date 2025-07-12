@@ -1,5 +1,7 @@
 # Hello, je suis Eliott 🤘
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lesimpleliott/)[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:eliott@elegarage.fr)
+
 ## ⚙️ Ma stack
 
 ![Next JS](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)![Electron](https://img.shields.io/badge/Electron-2C2E3B?style=for-the-badge&logo=electron&logoColor=9FEAF9)![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000)
@@ -9,10 +11,6 @@
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=lesimpleliott&layout=compact&theme=dark)
 
-## 📫 Me contacter
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lesimpleliott/)[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:eliott@elegarage.fr)
-
 ## 🚀 Mes Projets
 
 ### Liste des projets
@@ -21,6 +19,7 @@
 | Projet | Liens |
 |--------|-------|
 | **⚡️ Projets professionnels** |   |
+| [`ExcelCore`](#excelcore) 🔒 | [![GitHub](https://img.shields.io/badge/-GitHub-000?style=flat&logo=github)](https://github.com/MS-Access/ExcelCore) |
 | [`HDP-Houlgate`](#hdp-houlgate) 🔒 | [![GitHub](https://img.shields.io/badge/-GitHub-000?style=flat&logo=github)](https://github.com/lesimpleliott/HDP-Houlgate) [![Preview](https://img.shields.io/badge/-Preview-blue?style=flat&logo=vercel)](https://hdp-houlgate.vercel.app/fr) |
 | [`msaccess-website`](#msaccess-website) 🔒 | [![GitHub](https://img.shields.io/badge/-GitHub-000?style=flat&logo=github)](https://github.com/MS-Access/msaccess-website) |
 | [`Optimized-PDF`](#optimized-pdf) 🔒 | [![GitHub](https://img.shields.io/badge/-GitHub-000?style=flat&logo=github)](https://github.com/MS-Access/Optimized-PDF) |
@@ -67,6 +66,17 @@
 
 ### Liste détaillée des projets
 
+
+<a id="excelcore"></a>
+### ⚡️ [ExcelCore](https://github.com/MS-Access/ExcelCore) 🔒
+Custom Framework Excel avec possibilité de coder sur VSCode, avec gestion des préférences UI, d’un mode développeur sécurisé, et de constantes globales.
+
+
+![VBA](https://img.shields.io/badge/VBA-3776AB?style=for-the-badge&logo=visual-basic&logoColor=white) ![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
+```bash
+git clone https://github.com/MS-Access/ExcelCore.git
+```
+---
 
 <a id="hdp-houlgate"></a>
 ### ⚡️ [HDP-Houlgate](https://github.com/lesimpleliott/HDP-Houlgate) 🔒

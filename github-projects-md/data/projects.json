@@ -1,31 +1,5 @@
 [
   {
-    "name": "msaccess-website",
-    "url": "https://github.com/MS-Access/msaccess-website",
-    "description": "msaccess-website",
-    "visibility": "private",
-    "archived": false,
-    "stack": ["Next JS", "TypeScript", "Tailwind CSS"],
-    "stackManual": ["Next JS", "TypeScript", "Tailwind CSS"],
-    "category": "🚀 Projets personnels",
-    "categoryManual": "⚡️ Projets professionnels",
-    "previewUrl": "",
-    "websiteUrl": ""
-  },
-  {
-    "name": "Optimized-PDF",
-    "url": "https://github.com/MS-Access/Optimized-PDF",
-    "description": "Optimized_PDF",
-    "visibility": "private",
-    "archived": false,
-    "stack": ["Electron"],
-    "stackManual": ["Electron", "React", "Tailwind CSS"],
-    "category": "🚀 Projets personnels",
-    "categoryManual": "⚡️ Projets professionnels",
-    "previewUrl": "",
-    "websiteUrl": ""
-  },
-  {
     "name": "HDP-Houlgate",
     "url": "https://github.com/lesimpleliott/HDP-Houlgate",
     "description": "Site vitrine de l'Hôtel de la plage - Houlgate",
@@ -410,6 +384,45 @@
     "stackManual": ["JavaScript"],
     "category": "⚙️ Scripting",
     "categoryManual": "⚙️ Scripting",
+    "previewUrl": "",
+    "websiteUrl": ""
+  },
+  {
+    "name": "msaccess-website",
+    "url": "https://github.com/MS-Access/msaccess-website",
+    "description": "msaccess-website",
+    "visibility": "private",
+    "archived": false,
+    "stack": ["Next JS", "TypeScript", "Tailwind CSS"],
+    "stackManual": ["Next JS", "TypeScript", "Tailwind CSS"],
+    "category": "🚀 Projets personnels",
+    "categoryManual": "⚡️ Projets professionnels",
+    "previewUrl": "",
+    "websiteUrl": ""
+  },
+  {
+    "name": "Optimized-PDF",
+    "url": "https://github.com/MS-Access/Optimized-PDF",
+    "description": "Optimized_PDF",
+    "visibility": "private",
+    "archived": false,
+    "stack": ["Electron"],
+    "stackManual": ["Electron", "React", "Tailwind CSS"],
+    "category": "🚀 Projets personnels",
+    "categoryManual": "⚡️ Projets professionnels",
+    "previewUrl": "",
+    "websiteUrl": ""
+  },
+  {
+    "name": "ExcelCore",
+    "url": "https://github.com/MS-Access/ExcelCore",
+    "description": "Custom Framework Excel avec possibilité de coder sur VSCode, avec gestion des préférences UI, d’un mode développeur sécurisé, et de constantes globales.",
+    "visibility": "private",
+    "archived": false,
+    "stack": [],
+    "stackManual": ["VBA", "Excel"],
+    "category": "🚀 Projets personnels",
+    "categoryManual": "⚡️ Projets professionnels",
     "previewUrl": "",
     "websiteUrl": ""
   }

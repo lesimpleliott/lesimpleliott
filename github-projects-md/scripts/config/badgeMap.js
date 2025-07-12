@@ -25,4 +25,7 @@ export const badgeMap = {
     "![NextIntl](https://img.shields.io/badge/NextIntl-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)",
   i18Next:
     "![i18Next](https://img.shields.io/badge/i18Next-26A69A?style=for-the-badge&logo=javascript&logoColor=white)",
+  VBA: "![VBA](https://img.shields.io/badge/VBA-3776AB?style=for-the-badge&logo=visual-basic&logoColor=white)",
+  Excel:
+    "![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)",
 };
