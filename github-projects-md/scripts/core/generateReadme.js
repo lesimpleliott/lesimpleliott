@@ -4,8 +4,8 @@ import path, { dirname } from "path";
 import { fileURLToPath } from "url";
 
 import { PROJECTS_JSON_PATH } from "../config/paths.js";
-import { generateDetails } from "../core/generateDetails.js";
-import { generateSummary } from "../core/generateSummary.js";
+import { generateDetails } from "./generateDetails.js";
+import { generateSummary } from "./generateSummary.js";
 
 // Définition des chemins
 const __filename = fileURLToPath(import.meta.url);

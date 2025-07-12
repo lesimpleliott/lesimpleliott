@@ -1,9 +1,9 @@
 import "dotenv/config";
 import { PROJECTS_JSON_PATH } from "../config/paths.js";
-import { fetchAllRepos, fetchRepo } from "../utils/githubClient.js";
+import { fetchAllRepos, fetchRepo } from "../github/githubClient.js";
+import { updateProjectsJson } from "../github/updateProjectsJson.js";
 import { openInEditor } from "../utils/openInEditor.js";
 import { askYesNo } from "../utils/promptYesNo.js";
-import { updateProjectsJson } from "../utils/updateProjectsJson.js";
 
 const args = process.argv.slice(2);
 const target = args[0];

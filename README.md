@@ -80,7 +80,7 @@ git clone https://github.com/MS-Access/ExcelCore.git
 
 <a id="hdp-houlgate"></a>
 ### ⚡️ [HDP-Houlgate](https://github.com/lesimpleliott/HDP-Houlgate) 🔒
-Site vitrine de l'Hôtel de la plage - Houlgate
+Site vitrine de l'Hôtel de la plage à Houlgate
 
 🔗 [Voir la preview](https://hdp-houlgate.vercel.app/fr)
 
@@ -425,4 +425,4 @@ git clone https://github.com/lesimpleliott/OC_P11-ArgentBank.git
 
 ---
 
-_Généré automatiquement avec ❤️ par [github-projects-md](https://github.com/lesimpleliott/lesimpleliott)_
+_Généré automatiquement avec ❤️ par [github-projects-md](https://github.com/lesimpleliott/lesimpleliott/tree/main/github-projects-md)_

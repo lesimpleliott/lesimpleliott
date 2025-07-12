@@ -25,4 +25,4 @@
 
 ---
 
-_Généré automatiquement avec ❤️ par [github-projects-md](https://github.com/lesimpleliott/lesimpleliott)_
+_Généré automatiquement avec ❤️ par [github-projects-md](https://github.com/lesimpleliott/lesimpleliott/tree/main/github-projects-md)_

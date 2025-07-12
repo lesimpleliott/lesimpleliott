@@ -1,5 +1,5 @@
 import { badgeMap } from "../config/badgeMap.js";
-import { categoryMap } from "../config/defaults.js";
+import { categoryMap } from "../config/categoryMap.js";
 import { slugify } from "../utils/slugify.js";
 import { sortAlphaNumeric } from "../utils/sortAlphaNumeric.js";
 

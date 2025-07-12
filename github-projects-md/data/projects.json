@@ -2,7 +2,7 @@
   {
     "name": "HDP-Houlgate",
     "url": "https://github.com/lesimpleliott/HDP-Houlgate",
-    "description": "Site vitrine de l'Hôtel de la plage - Houlgate",
+    "description": "Site vitrine de l'Hôtel de la plage à Houlgate",
     "visibility": "private",
     "archived": false,
     "stack": ["Next JS", "JavaScript", "Tailwind CSS"],

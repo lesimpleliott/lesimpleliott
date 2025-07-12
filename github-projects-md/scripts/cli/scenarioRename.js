@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import fs from "fs";
 import ora from "ora";
 import { PROJECTS_JSON_PATH } from "../config/paths.js";
-import { updateRepoData } from "../utils/githubClient.js";
+import { updateRepoData } from "../github/githubClient.js";
 
 dotenv.config();
 

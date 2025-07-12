@@ -1,3 +1,31 @@
+## 2025-07-12 - refactor(structure): reorganize folders and test scripts with minor debug
+
+Réorganisation complète de la **structure du projet** et **tests manuels approfondis** des scripts principaux.
+
+- Réorganisation des dossiers
+  - `scripts/scenario/` renommé en `scripts/cli/` (commandes principales)
+  - `defaults.js` renommé en `categoryMap.js` (nom plus clair)
+  - `detectStack.js` déplacé vers `scripts/github/`
+  - `githubClient.js` déplacé vers `scripts/github/`
+  - `updateProjectsJson.js` déplacé vers `scripts/github/` et refondu
+  - Suppression de `getAllFiles.js` (obsolète)
+- Refactorisation de `updateProjectsJson`
+  - Affichage d'une alerte si `package.json` absent :
+    - `⚠ Ajouté : NomDuRepo / Infos : aucun package.json`
+    - `⚠ Mis à jour : NomDuRepo / Infos : aucun package.json`
+  - Préservation des champs manuels (`stackManual`, `categoryManual`, etc.)
+- Tests manuels des scripts CLI
+  - `npm run fetch` :
+    - ajout d’un repo avec stack
+    - ajout d’un repo sans `package.json` → message d'alerte fonctionnel
+    - mise à jour d’un repo existant → merge correct
+  - `npm run rename` :
+    - update conditionnel selon `projects.json` → test de renommage, description, archivage
+    - test de repo déjà à jour → message informatif sans update
+  - `npm run generate` :
+    - génération du `README.md` sans erreur
+    - liens d’ancre fonctionnels et légende affichée
+
 ## 2025-07-12 - refactor(core): centralize GitHub logic and refactor stack detection
 
 Refonte complète de la gestion GitHub via un module unique centralisé.
