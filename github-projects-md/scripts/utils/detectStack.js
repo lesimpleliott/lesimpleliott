@@ -1,87 +1,57 @@
-import fs from "fs";
-import path from "path";
-import { badgeMap } from "../config/badgeMap.js";
-import { getAllFiles } from "./getAllFiles.js";
-
-const stackOrder = Object.keys(badgeMap);
+import dotenv from "dotenv";
+import fetch from "node-fetch";
+dotenv.config();
 
 /**
- * Détecte les technos utilisées dans un repo local avec priorités :
- * - Next JS > React
- * - TypeScript > JavaScript
- * - Tailwind CSS > Styled Components > SASS > SCSS > CSS
- * @param {string} repoPath
- * @returns {string} badges markdown
+ * Détermine une stack approximative à partir du fichier package.json
  */
-export const detectStack = (repoPath) => {
-  const detected = new Set();
-  const files = getAllFiles(repoPath);
+const token = process.env.GITHUB_TOKEN;
+const headers = {
+  Authorization: `Bearer ${token}`,
+  Accept: "application/vnd.github+json",
+};
 
-  const pkgPath = path.join(repoPath, "package.json");
-  const pkg =
-    fs.existsSync(pkgPath) && fs.statSync(pkgPath).isFile()
-      ? JSON.parse(fs.readFileSync(pkgPath, "utf8"))
-      : {};
+export const detectStackFromPackageJson = async (repo) => {
+  const { full_name } = repo;
+  const url = `https://api.github.com/repos/${full_name}/contents/package.json`;
 
-  const deps = {
-    ...pkg.dependencies,
-    ...pkg.devDependencies,
-  };
+  try {
+    const res = await fetch(url, { headers });
 
-  const depKeys = Object.keys(deps || {}).map((d) => d.toLowerCase());
-
-  // --- Frameworks JS ---
-  const hasNext = depKeys.includes("next");
-  const hasReact = depKeys.includes("react");
-
-  if (hasNext) detected.add("Next JS");
-  else if (hasReact) detected.add("React");
-
-  // --- Langages ---
-  const hasTS = files.some((f) => f.endsWith(".ts") || f.endsWith(".tsx"));
-  const hasJS = files.some((f) => f.endsWith(".js") || f.endsWith(".jsx"));
-
-  if (hasTS) detected.add("TypeScript");
-  else if (hasJS) detected.add("JavaScript");
-
-  // --- CSS / Preprocessors ---
-  if (depKeys.includes("tailwindcss")) {
-    detected.add("Tailwind CSS");
-  } else if (depKeys.includes("styled-components")) {
-    detected.add("Styled Components");
-  } else if (files.some((f) => f.endsWith(".sass"))) {
-    detected.add("SASS");
-  } else if (files.some((f) => f.endsWith(".scss"))) {
-    detected.add("SCSS");
-  } else if (files.some((f) => f.endsWith(".css"))) {
-    detected.add("CSS");
-  }
-
-  // --- Autres technos définies dans badgeMap ---
-  stackOrder.forEach((key) => {
-    if (
-      [
-        "Next JS",
-        "React",
-        "TypeScript",
-        "JavaScript",
-        "Tailwind CSS",
-        "Styled Components",
-        "SASS",
-        "SCSS",
-        "CSS",
-      ].includes(key)
-    )
-      return;
-
-    const normalizedKey = key.toLowerCase().replace(/ /g, "");
-    if (depKeys.some((d) => d.includes(normalizedKey))) {
-      detected.add(key);
+    if (!res.ok) {
+      if (res.status === 404) return []; // Pas de package.json
+      throw new Error(`Erreur API GitHub (${res.status})`);
     }
-  });
 
-  return stackOrder
-    .filter((key) => detected.has(key))
-    .map((key) => badgeMap[key])
-    .join(" ");
+    const data = await res.json();
+
+    const decoded = Buffer.from(data.content, "base64").toString("utf8");
+    const pkg = JSON.parse(decoded);
+
+    const deps = {
+      ...pkg.dependencies,
+      ...pkg.devDependencies,
+    };
+
+    const stack = [];
+
+    for (const dep of Object.keys(deps)) {
+      if (dep.includes("react")) stack.push("React");
+      if (dep.includes("next")) stack.push("Next.js");
+      if (dep.includes("tailwind")) stack.push("Tailwind CSS");
+      if (dep.includes("vite")) stack.push("Vite");
+      if (dep.includes("typescript")) stack.push("TypeScript");
+      if (dep.includes("eslint")) stack.push("ESLint");
+      if (dep.includes("jest")) stack.push("Jest");
+      if (dep.includes("express")) stack.push("Express");
+      if (dep.includes("electron")) stack.push("Electron");
+    }
+
+    return [...new Set(stack)];
+  } catch (err) {
+    console.warn(
+      `⚠️ ${repo.name} : impossible d’analyser le package.json → ${err.message}`
+    );
+    return [];
+  }
 };

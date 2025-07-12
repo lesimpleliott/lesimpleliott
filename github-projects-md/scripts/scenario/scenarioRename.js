@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import fs from "fs";
 import ora from "ora";
 import { PROJECTS_JSON_PATH } from "../config/paths.js";
-import { updateRepo } from "../core/updateRepoData.js";
+import { updateRepoData } from "../utils/githubClient.js";
 
 dotenv.config();
 
@@ -17,11 +17,11 @@ const run = async () => {
     const spinner = ora(`${project.name} : mise à jour en cours...`).start();
 
     try {
-      const status = await updateRepo(project);
+      const status = await updateRepoData(project);
 
       switch (status) {
         case "ignored":
-          spinner.info(`🔒 ${project.name} : Ignoré (non propriétaire)`);
+          spinner.info(`🔒 ${project.name} : accès refusé ou repo privé.`);
           break;
         case "unchanged":
           spinner.info(`${project.name} : aucune modification.`);

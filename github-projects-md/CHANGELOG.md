@@ -1,3 +1,27 @@
+## 2025-07-12 - refactor(core): centralize GitHub logic and refactor stack detection
+
+Refonte complète de la gestion GitHub via un module unique centralisé.
+
+- **Fusion de modules**
+  - Suppression de : `core/fetchRepos.js` `core/gitApi.js` `core/updateRepoData.js`
+  - Nouvelle centralisation dans `utils/githubClient.js`
+- **Détection stack simplifiée**
+  - Nouveau système `detectStackFromPackageJson`
+  - Récupère et analyse `package.json` via l’API GitHub
+  - Plus besoin de `git clone`, détection basée sur les dépendances
+- **Mise à jour `projects.json`**
+  - Nouveau module `utils/updateProjectsJson.js` pour gérer la logique de mise à jour
+  - Préserve les champs manuels (`stackManual`, `categoryManual`)
+- **Nettoyage des scénarios**
+  - `scenarioEdit.js` :
+    - appelle `fetchRepo` / `fetchAllRepos`
+    - utilise `updateProjectsJson`
+  - `scenarioRename.js` :
+    - appelle `updateRepoData`
+- **Amélioration de la gestion des droits**
+  - Gère proprement les erreurs `403` / `404`, seuls les repos accessibles sont traités
+  - Désarchivage temporaire des repos avant renommage, puis réarchivage
+
 ## 2025-06-29 - feat(rename): update GitHub repos from JSON with smart patching
 
 Ajout de la commande `npm run rename` permettant de **synchroniser les dépôts GitHub** avec les données locales du `projects.json`.
