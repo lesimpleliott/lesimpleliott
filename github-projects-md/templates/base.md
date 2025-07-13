@@ -9,7 +9,7 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white)![Styled Components](https://img.shields.io/badge/Styled%20Components-DB7093?style=for-the-badge&logo=styledcomponents&logoColor=white)![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 ![Redux Toolkit](https://img.shields.io/badge/Redux%20Toolkit-764ABC?style=for-the-badge&logo=redux&logoColor=white)![Zustand](https://img.shields.io/badge/Zustand-000000?style=for-the-badge&logo=javascript&logoColor=white)![NextIntl](https://img.shields.io/badge/NextIntl-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)![i18Next](https://img.shields.io/badge/i18Next-26A69A?style=for-the-badge&logo=javascript&logoColor=white)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=lesimpleliott&layout=compact&theme=dark)
+<!-- ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=lesimpleliott&layout=compact&theme=dark) -->
 
 ## 🚀 Mes Projets
 

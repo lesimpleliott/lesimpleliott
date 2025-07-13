@@ -32,8 +32,6 @@ try {
 
   const projects = await updateProjectsJson(repos);
 
-  // console.log("");
-  // projects.forEach((project) => console.log(`✔ Ajouté : ${project.name}`));
   console.log(`\n📦 projects.json mis à jour avec ${projects.length} entrées.`);
 
   const edit = await askYesNo(

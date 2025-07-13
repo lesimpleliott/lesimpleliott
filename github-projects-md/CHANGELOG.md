@@ -1,3 +1,23 @@
+## 2025-07-13 - feat(stack): refactor stack detection with rules + clean output
+
+Refonte de la détection de stack et amélioration de l’affichage console.
+
+- Remplacé `badgeMap.js` par un fichier de configuration JSON : `stackRules.json`
+- Support des stacks **primaires** avec priorités et règles d’ignorance (`ignore`)
+- Support des **stacks secondaires** (librairies utilitaires, auth, backend, etc.)
+- Génération auto de `stackManual` à l’ajout (labels + dépendances secondaires)
+- Nettoyage de la console : spinner → message sur une seule ligne
+  - `\u001b[32m✔ Ajouté : nomDuRepo\u001b[0m`
+  - `✔ Mis à jour : nomDuRepo` (couleur par défaut)
+  - `\u001b[33m⚠ Ajouté : nomDuRepo / Infos : aucun package.json\u001b[0m`
+- Autres
+  - `detectStackFromPackageJson` recherche **tous** les `package.json` (arbre Git complet)
+  - Suppression de `badgeMap.js` (désormais géré via `stackRules.json`)
+  - Le spinner `ora` est stoppé proprement avant affichage du résultat
+- Résultat :
+  - Une seule ligne par repo dans la console
+  - Retour plus lisible, filtré, coloré et sans bruit inutile
+
 ## 2025-07-12 - refactor(structure): reorganize folders and test scripts with minor debug
 
 Réorganisation complète de la **structure du projet** et **tests manuels approfondis** des scripts principaux.
