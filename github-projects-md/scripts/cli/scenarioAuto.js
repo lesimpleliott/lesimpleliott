@@ -1,1 +1,0 @@
-// Script scénario automatique

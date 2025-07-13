@@ -1,112 +1,112 @@
 {
   "primaryStacks": [
     {
-      "match": ["next"],
       "label": "Next JS",
+      "match": ["next"],
       "badge": "![Next JS](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)",
-      "ignore": ["react"]
+      "ignore": ["react", "javascript"]
     },
     {
-      "match": ["react"],
       "label": "React",
+      "match": ["react"],
       "badge": "![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)",
       "ignore": []
     },
     {
-      "match": ["vite"],
       "label": "Vite",
+      "match": ["vite"],
       "badge": "![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=FFD700)",
       "ignore": []
     },
     {
-      "match": ["electron"],
       "label": "Electron",
+      "match": ["electron"],
       "badge": "![Electron](https://img.shields.io/badge/Electron-2C2E3B?style=for-the-badge&logo=electron&logoColor=9FEAF9)",
       "ignore": []
     },
     {
-      "match": ["typescript"],
       "label": "TypeScript",
+      "match": ["typescript"],
+      "matchExt": ["ts", "tsx"],
       "badge": "![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)",
-      "ignore": ["javascript"]
+      "ignore": ["JavaScript"]
     },
     {
-      "match": ["javascript"],
       "label": "JavaScript",
+      "match": ["javascript"],
+      "matchExt": ["js", "jsx"],
       "badge": "![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000)",
       "ignore": []
     },
     {
-      "match": ["tailwindcss"],
       "label": "Tailwind CSS",
+      "match": ["tailwindcss"],
       "badge": "![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white)",
-      "ignore": []
+      "ignore": ["css"]
     },
     {
-      "match": ["styled-components"],
       "label": "Styled Components",
+      "match": ["styled-components"],
       "badge": "![Styled Components](https://img.shields.io/badge/Styled%20Components-DB7093?style=for-the-badge&logo=styledcomponents&logoColor=white)",
       "ignore": ["sass", "css", "scss"]
     },
     {
-      "match": ["scss"],
-      "label": "SCSS",
-      "badge": "![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=sass&logoColor=white)",
-      "ignore": ["sass", "css"]
+      "label": "HTML",
+      "match": [],
+      "matchExt": ["html"],
+      "badge": "![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)",
+      "ignore": []
     },
     {
-      "match": ["sass"],
-      "label": "SASS",
-      "badge": "![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)",
-      "ignore": ["css"]
-    },
-    {
-      "match": ["css"],
       "label": "CSS",
+      "match": ["css"],
+      "matchExt": ["css"],
       "badge": "![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)",
       "ignore": []
     },
     {
-      "match": ["redux"],
+      "label": "Sass",
+      "match": ["sass", "scss"],
+      "matchExt": ["sass", "scss"],
+      "badge": "![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)",
+      "ignore": ["css"]
+    },
+    {
       "label": "Redux Toolkit",
+      "match": ["redux"],
       "badge": "![Redux Toolkit](https://img.shields.io/badge/Redux%20Toolkit-764ABC?style=for-the-badge&logo=redux&logoColor=white)",
       "ignore": []
     },
     {
-      "match": ["zustand"],
       "label": "Zustand",
+      "match": ["zustand"],
       "badge": "![Zustand](https://img.shields.io/badge/Zustand-000000?style=for-the-badge&logo=javascript&logoColor=white)",
       "ignore": []
     },
     {
-      "match": ["next-intl"],
       "label": "NextIntl",
+      "match": ["next-intl"],
       "badge": "![NextIntl](https://img.shields.io/badge/NextIntl-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)",
       "ignore": ["i18next"]
     },
     {
-      "match": ["i18next"],
       "label": "i18Next",
+      "match": ["i18next"],
       "badge": "![i18Next](https://img.shields.io/badge/i18Next-26A69A?style=for-the-badge&logo=javascript&logoColor=white)",
       "ignore": []
     },
     {
-      "match": ["vba"],
-      "label": "VBA",
-      "badge": "![VBA](https://img.shields.io/badge/VBA-3776AB?style=for-the-badge&logo=visual-basic&logoColor=white)",
-      "ignore": []
-    },
-    {
-      "match": ["excel"],
-      "label": "Excel",
-      "badge": "![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)",
+      "label": "VBA (Excel)",
+      "match": [],
+      "matchExt": ["bas"],
+      "badge": "![VBA](https://img.shields.io/badge/VBA%2FExcel-217346?style=for-the-badge&logo=educative&logoColor=white)",
       "ignore": []
     }
   ],
   "secondaryStacks": {
     "Web Dev Utils": [
-      "axios",
       "clsx",
+      "axios",
       "emailjs",
       "recharts",
       "marked",

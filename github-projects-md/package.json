@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "diff": "git diff --cached | pbcopy && echo '✅ Diff copied to clipboard !'",
-    "start": "node scripts/cli/scenarioAuto.js",
     "fetch": "node scripts/cli/scenarioEdit.js",
     "rename": "node scripts/cli/scenarioRename.js",
+    "detectStack": "node scripts/cli/scenarioDetectStack.js",
     "generate": "node scripts/core/generateReadme.js"
   },
   "dependencies": {

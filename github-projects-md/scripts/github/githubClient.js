@@ -137,3 +137,19 @@ export const updateRepoData = async (project) => {
 
   return "updated";
 };
+
+/**
+ * Récupère un arbre GitHub (tree) à partir du nom du repo et de la branche
+ */
+export const fetchRepoTree = async (fullName, branch) => {
+  const url = `https://api.github.com/repos/${fullName}/git/trees/${branch}?recursive=1`;
+  return fetchFromGitHub(url);
+};
+
+/**
+ * Récupère un blob GitHub (contenu d’un fichier brut, ex: package.json)
+ */
+export const fetchRepoBlob = async (fullName, sha) => {
+  const url = `https://api.github.com/repos/${fullName}/git/blobs/${sha}`;
+  return fetchFromGitHub(url);
+};

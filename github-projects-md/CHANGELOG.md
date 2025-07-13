@@ -1,3 +1,24 @@
+## 2025-07-14 - refactor(stack): improve stack detection and primaryStack sorting
+
+Cette mise à jour majeure améliore la robustesse et la précision du système de détection des technologies utilisées dans chaque repository GitHub.
+
+- **Refactor global du système `detectStack`** :
+  - Le fichier `detectStack.js` a été supprimé et remplacé par une architecture modulaire plus propre :
+    - `generateStackData.js` : point d’entrée unique pour la détection
+    - `detectFromPackageJson.js` : récupération des dépendances
+    - `detectFromRepoFiles.js` : détection des extensions
+  - Intégration dans un nouveau script CLI (`scenarioDetectStack.js`) pour tester facilement.
+- **Nouvelle logique de tri `filtered`** :
+  - La liste `filtered` respecte désormais **l’ordre défini dans `stackRules.primaryStacks`**
+- **Fusion des dépendances et extensions dans une analyse unifiée** :
+  - La fonction `analyzeStack` combine `deps` + `exts` pour extraire les technologies via leurs `match` et `matchExt`.
+  - L’algorithme supprime proprement les technologies ignorées (`ignore`), même si elles sont présentes.
+- Ajout des helpers GitHub :
+  - `fetchRepoTree` : récupération des fichiers d’un repo.
+  - `fetchRepoBlob` : lecture du contenu brut d’un fichier comme `package.json`.
+- **Script CLI repensé** :
+  `npm run detectStack <user/repo>` pour tester la détection de stack en local.
+
 ## 2025-07-13 - feat(stack): refactor stack detection with rules + clean output
 
 Refonte de la détection de stack et amélioration de l’affichage console.
