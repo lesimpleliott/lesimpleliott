@@ -1,3 +1,14 @@
+## 2025-07-14 - feat(stack-detection): split main/secondary stack with improved match logic
+
+- Ajout de `mainStack` et `secondaryStack` dans le profil de stack.
+- Détection des stacks secondaires via clé `match` (ex: "emailjs" détecte "@emailjs/browser").
+- Respect de l’ordre d’apparition dans le JSON pour le tri des stacks secondaires.
+- Renommage de `filtered` → `mainStack` pour plus de clarté.
+- `stackRules.secondaryStacks` passe d’un tableau de strings à un tableau d’objets `{ label, match }`.
+- Mise à jour du script `scenarioDetectStack.js` :
+  - Affiche `📦 Stack MAIN : [...]`
+  - Affiche `📦 Stack SECOND : [...]`
+
 ## 2025-07-14 - refactor(stack): improve stack detection and primaryStack sorting
 
 Cette mise à jour majeure améliore la robustesse et la précision du système de détection des technologies utilisées dans chaque repository GitHub.

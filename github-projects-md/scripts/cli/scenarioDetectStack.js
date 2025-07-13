@@ -18,7 +18,8 @@ try {
   console.log("📦 package.json détecté :", result.hasPackageJson);
   console.log("---------");
   console.log("📦 Stack complète :", result.full);
-  console.log("✅ Stack filtrée :", result.filtered);
+  console.log("✅ Stack MAIN :", result.mainStack);
+  console.log("✅ Stack SECOND :", result.secondaryStack);
 } catch (err) {
   console.error("❌ Erreur lors de la détection :", err.message);
 }

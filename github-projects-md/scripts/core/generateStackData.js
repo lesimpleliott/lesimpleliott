@@ -23,19 +23,22 @@ const loadStackRules = async () => {
 /**
  * Applique les stackRules sur un tableau de termes (dépendances ou extensions)
  * @param {string[]} rawStack
- * @returns {{ full: string[], filtered: string[] }}
+ * @returns {{ full: string[], mainStack: string[], secondaryStack: string[] }}
  */
 const analyzeStack = async (rawStack) => {
-  const { primaryStacks } = await loadStackRules();
+  const { primaryStacks, secondaryStacks } = await loadStackRules();
 
   const detected = rawStack.map((s) => s.toLowerCase());
   const matchedLabels = new Set();
   const matchedTerms = new Set();
   const ignoredTerms = new Set();
 
+  // === Analyse Primary ===
   for (const rule of primaryStacks) {
     const matchTerms = [...(rule.match || []), ...(rule.matchExt || [])];
-    const hasMatch = matchTerms.some((term) => detected.includes(term));
+    const hasMatch = matchTerms.some((term) =>
+      detected.some((detectedTerm) => detectedTerm.includes(term))
+    );
 
     if (hasMatch) {
       matchedLabels.add(rule.label);
@@ -61,12 +64,31 @@ const analyzeStack = async (rawStack) => {
     }
   }
 
+  // === Analyse Secondary ===
+  const remainingTerms = detected.filter(
+    (term) => !matchedTerms.has(term) && !ignoredTerms.has(term)
+  );
+
+  const secondaryOrderedLabels = [];
+
+  for (const group of Object.values(secondaryStacks)) {
+    for (const rule of group) {
+      const hasMatch = (rule.match || []).some((term) =>
+        remainingTerms.some((detectedTerm) => detectedTerm.includes(term))
+      );
+      if (hasMatch) {
+        secondaryOrderedLabels.push(rule.label);
+      }
+    }
+  }
+
   return {
     full: detected,
-    filtered: [...matchedLabels].sort((a, b) => {
+    mainStack: [...matchedLabels].sort((a, b) => {
       const order = primaryStacks.map((r) => r.label);
       return order.indexOf(a) - order.indexOf(b);
     }),
+    secondaryStack: secondaryOrderedLabels,
   };
 };
 
@@ -77,7 +99,8 @@ const analyzeStack = async (rawStack) => {
  *   deps: string[],
  *   exts: string[],
  *   full: string[],
- *   filtered: string[],
+ *   mainStack: string[],
+ *   secondaryStack: string[],
  *   hasPackageJson: boolean
  * }}
  */
@@ -91,13 +114,14 @@ export const buildStackProfile = async (fullName) => {
   const exts = await detectFromRepoFiles(repo);
   const combined = [...new Set([...deps, ...exts])];
 
-  const analysis = await analyzeStack(combined);
+  const { full, mainStack, secondaryStack } = await analyzeStack(combined);
 
   return {
     deps,
     exts,
-    full: analysis.full,
-    filtered: analysis.filtered,
+    full,
+    mainStack,
+    secondaryStack,
     hasPackageJson: deps.length > 0,
   };
 };

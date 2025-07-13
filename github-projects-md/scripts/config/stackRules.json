@@ -105,26 +105,33 @@
   ],
   "secondaryStacks": {
     "Web Dev Utils": [
-      "clsx",
-      "axios",
-      "emailjs",
-      "recharts",
-      "marked",
-      "mdx-js",
-      "sanitize-html",
-      "slugify"
+      { "label": "CLSX", "match": ["clsx"] },
+      { "label": "Axios", "match": ["axios"] },
+      { "label": "EmailJS", "match": ["emailjs"] },
+      { "label": "FontAwesome", "match": ["fortawesome"] },
+      { "label": "Recharts", "match": ["recharts"] },
+      { "label": "Marked", "match": ["marked"] },
+      { "label": "MDX-JS", "match": ["mdx-js"] },
+      { "label": "Sanitize HTML", "match": ["sanitize-html"] },
+      { "label": "Slugify", "match": ["slugify"] }
     ],
-    "Auth & Security": ["bcryptjs", "dompurify"],
-    "Backend & Database": ["firebase", "mongodb", "mongoose"],
+    "Auth & Security": [
+      { "label": "bcryptjs", "match": ["bcryptjs"] },
+      { "label": "DOMPurify", "match": ["dompurify"] }
+    ],
+    "Backend & Database": [
+      { "label": "Firebase", "match": ["firebase"] },
+      { "label": "MongoDB", "match": ["mongodb", "mongoose"] }
+    ],
     "CLI & Terminal Tools": [
-      "ora",
-      "simple-git",
-      "inquirer",
-      "prompts",
-      "progress",
-      "clipboardy",
-      "sharp",
-      "fs-extra"
+      { "label": "Ora", "match": ["ora"] },
+      { "label": "Simple Git", "match": ["simple-git"] },
+      { "label": "Inquirer", "match": ["inquirer"] },
+      { "label": "Prompts", "match": ["prompts"] },
+      { "label": "Progress", "match": ["progress"] },
+      { "label": "Clipboardy", "match": ["clipboardy"] },
+      { "label": "Sharp", "match": ["sharp"] },
+      { "label": "fs-extra", "match": ["fs-extra"] }
     ]
   }
 }
