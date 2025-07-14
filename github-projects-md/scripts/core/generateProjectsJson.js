@@ -4,75 +4,105 @@ import fs from "fs/promises";
 import ora from "ora";
 import path from "path";
 import { fileURLToPath } from "url";
-
-import { categoryMap } from "../config/categoryMap.js";
 import { PROJECTS_JSON_PATH } from "../config/paths.js";
+import { fetchLastCommitDate } from "../github/githubClient.js";
 import { buildStackProfile } from "./generateStackData.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const categoryMapPath = path.join(__dirname, "../config/categoryMap.json");
+const rawCategoryMap = await fs.readFile(categoryMapPath, "utf8");
+const categoryMap = JSON.parse(rawCategoryMap);
+
+/**
+ * Charge les projets existants (si le fichier existe)
+ */
+const getExistingProjects = async () => {
+  if (fsSync.existsSync(PROJECTS_JSON_PATH)) {
+    const raw = await fs.readFile(PROJECTS_JSON_PATH, "utf8");
+    return JSON.parse(raw);
+  }
+  return [];
+};
+
+/**
+ * Détecte automatiquement la catégorie à partir du préfixe ou du propriétaire
+ */
+const resolveCategory = (repo) => {
+  const prefix = repo.name.match(/^([A-Z]+)_/)?.[1] || "default";
+  const prefixMatch = categoryMap.find((c) => c.prefix === prefix);
+  let category = prefixMatch?.id;
+
+  if (!category) {
+    const isSameUser = repo.owner?.login === process.env.GITHUB_USERNAME;
+    if (isSameUser) {
+      category = "perso";
+    } else if (repo.owner?.login) {
+      category = "pro";
+    } else {
+      category = "default";
+    }
+  }
+
+  return category;
+};
+
+/**
+ * Construit le tableau stack à partir du repo GitHub (main + secondary)
+ */
+const resolveStack = async (repoFullName) => {
+  const { mainStack, secondaryStack } = await buildStackProfile(repoFullName);
+  return [...mainStack, ...secondaryStack];
+};
+
+/**
+ * Retourne une ligne de log colorée en fonction du statut
+ */
+const formatLogStatus = (name, status) => {
+  const green = (txt) => `\u001b[32m${txt}\u001b[0m`;
+  const blue = (txt) => `\u001b[36m${txt}\u001b[0m`;
+  const orange = (txt) => `\u001b[33m${txt}\u001b[0m`;
+
+  if (status === "new") return green(`✔ Ajouté : ${name}`);
+  if (status === "updated") return orange(`✔ Mise à jour : ${name}`);
+  return blue(`ℹ Inchangé : ${name}`);
+};
 
 /**
  * Génère un fichier projects.json enrichi à partir d'une liste de repos GitHub
- * @param {Array<Object>} repos - Liste des repos GitHub à traiter
- * @returns {number} - Nombre d’entrées mises à jour ou ajoutées
  */
 export const generateProjectsJson = async (repos = []) => {
-  let projects = [];
-
-  if (fsSync.existsSync(PROJECTS_JSON_PATH)) {
-    const raw = await fs.readFile(PROJECTS_JSON_PATH, "utf8");
-    projects = JSON.parse(raw);
-  }
-
+  let projects = await getExistingProjects();
   let updatedCount = 0;
 
   for (const repo of repos) {
-    const { name, html_url, description, visibility, archived } = repo;
-
-    const spinner = ora(`${name} → analyse stack...`).start();
+    const spinner = ora(`${repo.name} → analyse stack...`).start();
 
     try {
-      const { mainStack, secondaryStack } = await buildStackProfile(
-        repo.full_name
-      );
-
-      const fullStack = [...mainStack, ...secondaryStack].map((s) =>
-        s.toLowerCase()
-      );
-
-      const index = projects.findIndex((p) => p.name === name);
+      const fullStack = await resolveStack(repo.full_name);
+      const index = projects.findIndex((p) => p.name === repo.name);
       const existing = projects[index];
-      const stackManual = existing?.stackManual || [""];
-
-      const prefix = name.match(/^([A-Z]+)_/)?.[1] || "default";
-      const category = categoryMap[prefix] || categoryMap.default;
+      const category = resolveCategory(repo);
 
       const newData = {
-        name,
-        url: html_url,
-        description: description || "",
-        lastUpdate: repo.updated_at?.slice(0, 10) || null,
-        visibility,
-        archived,
+        name: repo.name,
+        url: repo.html_url,
+        description: repo.description || "",
+        lastUpdate: await fetchLastCommitDate(repo.full_name),
+        visibility: repo.visibility,
+        archived: repo.archived,
         stack: fullStack,
-        stackManual,
+        stackManual: existing?.stackManual || [""],
         category,
         categoryManual: existing?.categoryManual || category,
         previewUrl: existing?.previewUrl || "",
         websiteUrl: existing?.websiteUrl || "",
       };
 
-      let status = "new"; // "new", "updated", "unchanged"
-
+      let status = "new";
       if (existing) {
-        const stringifiedOld = JSON.stringify(existing, null, 2);
-        const stringifiedNew = JSON.stringify(
-          { ...existing, ...newData },
-          null,
-          2
-        );
-
-        if (stringifiedOld === stringifiedNew) {
+        const oldData = JSON.stringify(existing, null, 2);
+        const newMerged = JSON.stringify({ ...existing, ...newData }, null, 2);
+        if (oldData === newMerged) {
           status = "unchanged";
         } else {
           projects[index] = { ...existing, ...newData };
@@ -83,28 +113,12 @@ export const generateProjectsJson = async (repos = []) => {
       }
 
       updatedCount++;
-
-      // === Couleurs console
-      const green = (txt) => `\u001b[32m${txt}\u001b[0m`;
-      const blue = (txt) => `\u001b[36m${txt}\u001b[0m`;
-      const orange = (txt) => `\u001b[33m${txt}\u001b[0m`;
-
-      let finalMsg = "";
-
-      if (status === "new") {
-        finalMsg = green(`✔ Ajouté : ${name}`);
-      } else if (status === "updated") {
-        finalMsg = orange(`✔ Mise à jour : ${name}`);
-      } else {
-        finalMsg = blue(`ℹ Inchangé : ${name}`);
-      }
-
       spinner.stop();
       process.stdout.clearLine(0);
       process.stdout.cursorTo(0);
-      console.log(finalMsg);
+      console.log(formatLogStatus(repo.name, status));
     } catch (err) {
-      spinner.fail(`❌ ${name} : erreur d’analyse → ${err.message}`);
+      spinner.fail(`❌ ${repo.name} : erreur d’analyse → ${err.message}`);
     }
   }
 

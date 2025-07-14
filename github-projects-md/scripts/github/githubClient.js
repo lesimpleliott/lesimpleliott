@@ -153,3 +153,26 @@ export const fetchRepoBlob = async (fullName, sha) => {
   const url = `https://api.github.com/repos/${fullName}/git/blobs/${sha}`;
   return fetchFromGitHub(url);
 };
+
+/**
+ * Récupère la date du dernier commit sur la branche par défaut
+ * @param {string} fullName - ex: "user/repo"
+ * @returns {Promise<string|null>} - Date formatée YYYY-MM-DD
+ */
+export async function fetchLastCommitDate(fullName) {
+  const [owner, repo] = fullName.split("/");
+
+  // Récupère le nom de la branche par défaut
+  const repoInfo = await fetchFromGitHub(
+    `https://api.github.com/repos/${owner}/${repo}`
+  );
+  const defaultBranch = repoInfo.default_branch;
+
+  // Récupère les commits de cette branche (le plus récent en premier)
+  const commits = await fetchFromGitHub(
+    `https://api.github.com/repos/${owner}/${repo}/commits?sha=${defaultBranch}&per_page=1`
+  );
+
+  const lastDate = commits?.[0]?.commit?.committer?.date || null;
+  return lastDate ? lastDate.slice(0, 10) : null;
+}

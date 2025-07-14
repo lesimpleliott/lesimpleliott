@@ -5,12 +5,21 @@
     "description": "Site vitrine de l'Hôtel de la plage à Houlgate",
     "visibility": "private",
     "archived": false,
-    "stack": ["Next JS", "JavaScript", "Tailwind CSS"],
-    "stackManual": ["Next JS", "Tailwind CSS"],
-    "category": "🚀 Projets personnels",
-    "categoryManual": "⚡️ Projets professionnels",
+    "stack": [
+      "Next JS",
+      "Tailwind CSS",
+      "NextIntl",
+      "CLSX",
+      "EmailJS",
+      "FontAwesome",
+      "MDX-JS"
+    ],
+    "stackManual": [],
+    "category": "perso",
+    "categoryManual": "pro",
     "previewUrl": "https://hdp-houlgate.vercel.app/fr",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2025-06-25"
   },
   {
     "name": "lesimpleliott",
@@ -18,12 +27,17 @@
     "description": "Config files and script for my GitHub profile.",
     "visibility": "public",
     "archived": false,
-    "stack": [],
-    "stackManual": ["JavaScript"],
-    "category": "🚀 Projets personnels",
-    "categoryManual": "⚙️ Scripting",
+    "stack": [
+      "JavaScript",
+      "Ora",
+      "Simple-Git"
+    ],
+    "stackManual": [],
+    "category": "perso",
+    "categoryManual": "script",
     "previewUrl": "",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2025-07-13"
   },
   {
     "name": "OC_P10-724Events",
@@ -31,12 +45,16 @@
     "description": "OpenClassRooms / Projet 10 - Débuggez le site d'une agence d'événementiel",
     "visibility": "public",
     "archived": true,
-    "stack": ["React", "JavaScript"],
-    "stackManual": ["React", "SCSS"],
-    "category": "🎓 OpenClassrooms",
-    "categoryManual": "🎓 OpenClassrooms",
+    "stack": [
+      "React",
+      "TypeScript"
+    ],
+    "stackManual": [],
+    "category": "openclassrooms",
+    "categoryManual": "openclassrooms",
     "previewUrl": "",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2024-03-26"
   },
   {
     "name": "OC_P11-ArgentBank",
@@ -44,12 +62,19 @@
     "description": "OpenClassRooms / Projet 11 - Implémentez le front-end d'une application bancaire avec React",
     "visibility": "public",
     "archived": true,
-    "stack": ["React", "JavaScript", "Styled Components"],
-    "stackManual": ["React", "Styled Components", "Redux Toolkit"],
-    "category": "🎓 OpenClassrooms",
-    "categoryManual": "🎓 OpenClassrooms",
+    "stack": [
+      "React",
+      "Vite",
+      "TypeScript",
+      "Styled-Components",
+      "Redux-Toolkit"
+    ],
+    "stackManual": [],
+    "category": "openclassrooms",
+    "categoryManual": "openclassrooms",
     "previewUrl": "",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2024-04-23"
   },
   {
     "name": "OC_P3-Booki",
@@ -57,12 +82,16 @@
     "description": "OpenClassRooms / Projet 3 - Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
     "visibility": "public",
     "archived": true,
-    "stack": [],
-    "stackManual": ["HTML", "CSS"],
-    "category": "🎓 OpenClassrooms",
-    "categoryManual": "🎓 OpenClassrooms",
+    "stack": [
+      "HTML",
+      "CSS"
+    ],
+    "stackManual": [],
+    "category": "openclassrooms",
+    "categoryManual": "openclassrooms",
     "previewUrl": "",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2023-10-23"
   },
   {
     "name": "OC_P8-Kasa",
@@ -70,12 +99,16 @@
     "description": "OpenClassRooms / Projet 8 - Créez une application web de location immobilière avec React",
     "visibility": "public",
     "archived": true,
-    "stack": ["React", "JavaScript"],
-    "stackManual": ["React", "SCSS"],
-    "category": "🎓 OpenClassrooms",
-    "categoryManual": "🎓 OpenClassrooms",
+    "stack": [
+      "React",
+      "Vite"
+    ],
+    "stackManual": [],
+    "category": "openclassrooms",
+    "categoryManual": "openclassrooms",
     "previewUrl": "",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2024-05-02"
   },
   {
     "name": "OC_P7-MenuMaker",
@@ -84,11 +117,12 @@
     "visibility": "public",
     "archived": true,
     "stack": [],
-    "stackManual": ["Gestion de projet"],
-    "category": "🎓 OpenClassrooms",
-    "categoryManual": "🎓 OpenClassrooms",
+    "stackManual": [],
+    "category": "openclassrooms",
+    "categoryManual": "openclassrooms",
     "previewUrl": "",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2024-02-09"
   },
   {
     "name": "OC_P9-Nina-Carducci",
@@ -96,12 +130,17 @@
     "description": "OpenClassRooms / Projet 9 - Optimisez le référencement d'un site de photographe",
     "visibility": "public",
     "archived": true,
-    "stack": [],
-    "stackManual": ["HTML", "CSS", "JavaScript"],
-    "category": "🎓 OpenClassrooms",
-    "categoryManual": "🎓 OpenClassrooms",
+    "stack": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "stackManual": [],
+    "category": "openclassrooms",
+    "categoryManual": "openclassrooms",
     "previewUrl": "",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2024-03-02"
   },
   {
     "name": "OC_P4-ohmyfood",
@@ -109,12 +148,16 @@
     "description": "OpenClassRooms / Projet 4 - Améliorez l'interface d'un site mobile avec des animations CSS",
     "visibility": "public",
     "archived": true,
-    "stack": [],
-    "stackManual": ["HTML", "SCSS"],
-    "category": "🎓 OpenClassrooms",
-    "categoryManual": "🎓 OpenClassrooms",
+    "stack": [
+      "HTML",
+      "Sass"
+    ],
+    "stackManual": [],
+    "category": "openclassrooms",
+    "categoryManual": "openclassrooms",
     "previewUrl": "",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2023-11-17"
   },
   {
     "name": "OC_P5-Printit",
@@ -122,12 +165,17 @@
     "description": "OpenClassRooms / Projet 5 - Premiers pas sur le langage JavaScript",
     "visibility": "public",
     "archived": true,
-    "stack": [],
-    "stackManual": ["HTML", "JavaScript"],
-    "category": "🎓 OpenClassrooms",
-    "categoryManual": "🎓 OpenClassrooms",
+    "stack": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "stackManual": [],
+    "category": "openclassrooms",
+    "categoryManual": "openclassrooms",
     "previewUrl": "",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2023-11-24"
   },
   {
     "name": "OC_P2-Riding-Cities",
@@ -135,12 +183,16 @@
     "description": "OpenClassRooms / Projet 2 - Premiers pas sur le langage HTML",
     "visibility": "public",
     "archived": true,
-    "stack": [],
-    "stackManual": ["HTML"],
-    "category": "🎓 OpenClassrooms",
-    "categoryManual": "🎓 OpenClassrooms",
+    "stack": [
+      "HTML",
+      "CSS"
+    ],
+    "stackManual": [],
+    "category": "openclassrooms",
+    "categoryManual": "openclassrooms",
     "previewUrl": "",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2023-10-20"
   },
   {
     "name": "OC_P6-SophieBluel",
@@ -148,12 +200,17 @@
     "description": "OpenClassRooms / Projet 6 - Créez une page web dynamique avec JavaScript",
     "visibility": "public",
     "archived": true,
-    "stack": [],
-    "stackManual": ["HTML", "JavaScript", "SCSS"],
-    "category": "🎓 OpenClassrooms",
-    "categoryManual": "🎓 OpenClassrooms",
+    "stack": [
+      "JavaScript",
+      "HTML",
+      "Sass"
+    ],
+    "stackManual": [],
+    "category": "openclassrooms",
+    "categoryManual": "openclassrooms",
     "previewUrl": "",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2024-02-16"
   },
   {
     "name": "SB_axoria-NextJS-course",
@@ -161,12 +218,25 @@
     "description": "Découverte Next JS avec le cours *École du web*",
     "visibility": "public",
     "archived": false,
-    "stack": ["Next JS", "Tailwind CSS", "HTML"],
-    "stackManual": ["Next JS", "Tailwind CSS"],
-    "category": "🧪 SandBox",
-    "categoryManual": "🧪 SandBox",
+    "stack": [
+      "Next JS",
+      "Tailwind CSS",
+      "VBA",
+      "Marked",
+      "Sanitize HTML",
+      "Slugify",
+      "bcryptjs",
+      "DOMPurify",
+      "Firebase",
+      "MongoDB",
+      "Sharp"
+    ],
+    "stackManual": [],
+    "category": "sandbox",
+    "categoryManual": "sandbox",
     "previewUrl": "",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2025-04-14"
   },
   {
     "name": "SB_Dock-Mac-OS",
@@ -174,12 +244,16 @@
     "description": "Dock Mac OS full CSS",
     "visibility": "public",
     "archived": false,
-    "stack": ["SCSS"],
-    "stackManual": ["SCSS"],
-    "category": "🧪 SandBox",
-    "categoryManual": "🧪 SandBox",
+    "stack": [
+      "HTML",
+      "Sass"
+    ],
+    "stackManual": [],
+    "category": "sandbox",
+    "categoryManual": "sandbox",
     "previewUrl": "",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2024-03-15"
   },
   {
     "name": "SB_eLeLab",
@@ -187,12 +261,20 @@
     "description": "My Lab - Essai CSS, JS, Libraries, etc.",
     "visibility": "public",
     "archived": false,
-    "stack": [],
+    "stack": [
+      "Next JS",
+      "Vite",
+      "TypeScript",
+      "Styled-Components",
+      "Zustand",
+      "i18Next"
+    ],
     "stackManual": [],
-    "category": "🧪 SandBox",
-    "categoryManual": "🧪 SandBox",
+    "category": "sandbox",
+    "categoryManual": "sandbox",
     "previewUrl": "",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2024-08-04"
   },
   {
     "name": "SB_Movie_ReactApp",
@@ -200,12 +282,18 @@
     "description": "OC_SideProjet / Test React App + API TMDB",
     "visibility": "public",
     "archived": false,
-    "stack": ["React", "JavaScript", "Styled Components"],
-    "stackManual": ["React", "Styled Components"],
-    "category": "🧪 SandBox",
-    "categoryManual": "🧪 SandBox",
+    "stack": [
+      "React",
+      "Vite",
+      "TypeScript",
+      "Styled-Components"
+    ],
+    "stackManual": [],
+    "category": "sandbox",
+    "categoryManual": "sandbox",
     "previewUrl": "",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2024-04-05"
   },
   {
     "name": "SB_React-PeopleApp",
@@ -213,12 +301,17 @@
     "description": "OC_SideProjet / Test React App + API randomuser.me",
     "visibility": "public",
     "archived": false,
-    "stack": ["React"],
-    "stackManual": ["React"],
-    "category": "🧪 SandBox",
-    "categoryManual": "🧪 SandBox",
+    "stack": [
+      "React",
+      "TypeScript",
+      "Axios"
+    ],
+    "stackManual": [],
+    "category": "sandbox",
+    "categoryManual": "sandbox",
     "previewUrl": "",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2024-04-19"
   },
   {
     "name": "SB_ReactWorld",
@@ -226,12 +319,17 @@
     "description": "OC_SideProjet / FromScratch - Ma première app React",
     "visibility": "public",
     "archived": false,
-    "stack": ["React"],
-    "stackManual": ["React"],
-    "category": "🧪 SandBox",
-    "categoryManual": "🧪 SandBox",
+    "stack": [
+      "React",
+      "TypeScript",
+      "Axios"
+    ],
+    "stackManual": [],
+    "category": "sandbox",
+    "categoryManual": "sandbox",
     "previewUrl": "",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2024-02-13"
   },
   {
     "name": "SCPT_ExportAlbums",
@@ -239,12 +337,17 @@
     "description": "Création d'un fichier JSON à partir des photos à partir de répertoire",
     "visibility": "public",
     "archived": false,
-    "stack": ["JavaScript"],
-    "stackManual": ["JavaScript"],
-    "category": "⚙️ Scripting",
-    "categoryManual": "⚙️ Scripting",
+    "stack": [
+      "JavaScript",
+      "Progress",
+      "Sharp"
+    ],
+    "stackManual": [],
+    "category": "script",
+    "categoryManual": "script",
     "previewUrl": "",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2024-07-04"
   },
   {
     "name": "SCPT_Folder-Structure-Generatooooor",
@@ -252,12 +355,18 @@
     "description": "Script pour générer l'arborescence d'un dossier",
     "visibility": "public",
     "archived": false,
-    "stack": [],
-    "stackManual": ["JavaScript"],
-    "category": "⚙️ Scripting",
-    "categoryManual": "⚙️ Scripting",
+    "stack": [
+      "JavaScript",
+      "Inquirer",
+      "Clipboardy",
+      "fs-extra"
+    ],
+    "stackManual": [],
+    "category": "script",
+    "categoryManual": "script",
     "previewUrl": "",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2025-06-25"
   },
   {
     "name": "SCPT_PDF2JPG",
@@ -265,12 +374,15 @@
     "description": "Script pour convertir un PDF en JPG",
     "visibility": "public",
     "archived": false,
-    "stack": ["JavaScript"],
-    "stackManual": ["JavaScript"],
-    "category": "⚙️ Scripting",
-    "categoryManual": "⚙️ Scripting",
+    "stack": [
+      "JavaScript"
+    ],
+    "stackManual": [],
+    "category": "script",
+    "categoryManual": "script",
     "previewUrl": "",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2025-06-25"
   },
   {
     "name": "SCPT_Starter-kit-React",
@@ -278,12 +390,18 @@
     "description": "My starter-kit React avec lib (Tailwind CSS, i18Next, Zustand, etc.)",
     "visibility": "public",
     "archived": false,
-    "stack": ["JavaScript"],
-    "stackManual": ["JavaScript"],
-    "category": "⚙️ Scripting",
-    "categoryManual": "⚙️ Scripting",
+    "stack": [
+      "React",
+      "Vite",
+      "TypeScript",
+      "Prompts"
+    ],
+    "stackManual": [],
+    "category": "script",
+    "categoryManual": "script",
     "previewUrl": "",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2024-09-16"
   },
   {
     "name": "SCPT_WebScreen-Automator",
@@ -291,12 +409,15 @@
     "description": "Automatisation pour créér des captures d'écran de sites web selon différents viewports",
     "visibility": "public",
     "archived": false,
-    "stack": ["JavaScript"],
-    "stackManual": ["JavaScript"],
-    "category": "⚙️ Scripting",
-    "categoryManual": "⚙️ Scripting",
+    "stack": [
+      "JavaScript"
+    ],
+    "stackManual": [],
+    "category": "script",
+    "categoryManual": "script",
     "previewUrl": "",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2024-11-03"
   },
   {
     "name": "Tekkare-dashboard",
@@ -304,18 +425,21 @@
     "description": "Test technique Tekkare",
     "visibility": "public",
     "archived": false,
-    "stack": ["React", "TypeScript", "Tailwind CSS", "Zustand", "i18Next"],
-    "stackManual": [
+    "stack": [
       "Next JS",
+      "Vite",
       "TypeScript",
       "Tailwind CSS",
       "Zustand",
-      "i18Next"
+      "i18Next",
+      "Recharts"
     ],
-    "category": "🚀 Projets personnels",
+    "stackManual": [],
+    "category": "perso",
     "categoryManual": "🚀 Projets personnels",
     "previewUrl": "https://tekkare.elegarage.fr",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2024-09-23"
   },
   {
     "name": "SB_TimeKeeper",
@@ -323,12 +447,19 @@
     "description": "Test Next + API + MongoDB",
     "visibility": "public",
     "archived": false,
-    "stack": ["Next JS", "TypeScript", "Tailwind CSS"],
-    "stackManual": ["Next JS", "TypeScript", "Tailwind CSS", "Redux Toolkit"],
-    "category": "🧪 SandBox",
-    "categoryManual": "🧪 SandBox",
+    "stack": [
+      "Next JS",
+      "TypeScript",
+      "Tailwind CSS",
+      "Redux-Toolkit",
+      "MongoDB"
+    ],
+    "stackManual": [],
+    "category": "sandbox",
+    "categoryManual": "sandbox",
     "previewUrl": "",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2024-11-07"
   },
   {
     "name": "Wedding-KatElio_Photos",
@@ -336,17 +467,19 @@
     "description": "Site de partage des photos du mariage de Kat et Elio / mot de passe : demo",
     "visibility": "public",
     "archived": false,
-    "stack": ["React", "TypeScript", "Styled Components"],
-    "stackManual": [
+    "stack": [
       "React",
+      "Vite",
       "TypeScript",
-      "Styled Components",
-      "Redux Toolkit"
+      "Styled-Components",
+      "Redux-Toolkit"
     ],
-    "category": "🚀 Projets personnels",
+    "stackManual": [],
+    "category": "perso",
     "categoryManual": "🚀 Projets personnels",
     "previewUrl": "https://demo.katelio.fr",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2024-07-24"
   },
   {
     "name": "Wedding-KatElio_RSVP",
@@ -354,12 +487,17 @@
     "description": "Site de RSVP pour le mariage de Kat et Elio / Mot de passe : pinktouch ",
     "visibility": "public",
     "archived": false,
-    "stack": [],
-    "stackManual": ["HTML", "SCSS", "JavaScript"],
-    "category": "🚀 Projets personnels",
+    "stack": [
+      "JavaScript",
+      "HTML",
+      "Sass"
+    ],
+    "stackManual": [],
+    "category": "perso",
     "categoryManual": "🚀 Projets personnels",
     "previewUrl": "https://lesimpleliott.github.io/Wedding-KatElio_RSVP/",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2024-06-11"
   },
   {
     "name": "MyPortfolio",
@@ -367,12 +505,20 @@
     "description": "Portfolio Eliott Lesimple / eLeGarage",
     "visibility": "public",
     "archived": false,
-    "stack": ["React", "TypeScript", "Styled Components", "Zustand"],
-    "stackManual": ["React", "TypeScript", "Styled Components", "Zustand"],
-    "category": "🚀 Projets personnels",
+    "stack": [
+      "React",
+      "Vite",
+      "TypeScript",
+      "Styled-Components",
+      "Zustand",
+      "EmailJS"
+    ],
+    "stackManual": [],
+    "category": "perso",
     "categoryManual": "🚀 Projets personnels",
     "previewUrl": "",
-    "websiteUrl": "https://elegarage.fr"
+    "websiteUrl": "https://elegarage.fr",
+    "lastUpdate": "2024-10-25"
   },
   {
     "name": "SCPT_Illustrator-Tools",
@@ -380,12 +526,15 @@
     "description": "Collection de scripts JavaScript pour **Adobe Illustrator CC 2020+**, conçus pour améliorer le flux de travail",
     "visibility": "public",
     "archived": false,
-    "stack": ["JavaScript"],
-    "stackManual": ["JavaScript"],
-    "category": "⚙️ Scripting",
-    "categoryManual": "⚙️ Scripting",
+    "stack": [
+      "JavaScript"
+    ],
+    "stackManual": [],
+    "category": "script",
+    "categoryManual": "script",
     "previewUrl": "",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2025-07-08"
   },
   {
     "name": "msaccess-website",
@@ -393,12 +542,17 @@
     "description": "msaccess-website",
     "visibility": "private",
     "archived": false,
-    "stack": ["Next JS", "TypeScript", "Tailwind CSS"],
-    "stackManual": ["Next JS", "TypeScript", "Tailwind CSS"],
-    "category": "🚀 Projets personnels",
-    "categoryManual": "⚡️ Projets professionnels",
+    "stack": [
+      "Next JS",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "stackManual": [],
+    "category": "pro",
+    "categoryManual": "pro",
     "previewUrl": "",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2025-07-11"
   },
   {
     "name": "Optimized-PDF",
@@ -406,12 +560,19 @@
     "description": "Optimized_PDF",
     "visibility": "private",
     "archived": false,
-    "stack": ["Electron"],
-    "stackManual": ["Electron", "React", "Tailwind CSS"],
-    "category": "🚀 Projets personnels",
-    "categoryManual": "⚡️ Projets professionnels",
+    "stack": [
+      "React",
+      "Vite",
+      "Electron",
+      "Tailwind CSS",
+      "FontAwesome"
+    ],
+    "stackManual": [],
+    "category": "pro",
+    "categoryManual": "pro",
     "previewUrl": "",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2025-04-07"
   },
   {
     "name": "ExcelCore",
@@ -419,11 +580,15 @@
     "description": "Custom Framework Excel avec possibilité de coder sur VSCode, avec gestion des préférences UI, d’un mode développeur sécurisé, et de constantes globales.",
     "visibility": "private",
     "archived": false,
-    "stack": [],
-    "stackManual": ["VBA", "Excel"],
-    "category": "🚀 Projets personnels",
-    "categoryManual": "⚡️ Projets professionnels",
+    "stack": [
+      "JavaScript",
+      "VBA"
+    ],
+    "stackManual": [],
+    "category": "pro",
+    "categoryManual": "pro",
     "previewUrl": "",
-    "websiteUrl": ""
+    "websiteUrl": "",
+    "lastUpdate": "2025-07-12"
   }
 ]

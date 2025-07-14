@@ -4,13 +4,13 @@
       "label": "Next JS",
       "match": ["next"],
       "badge": "![Next JS](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)",
-      "ignore": ["react", "javascript"]
+      "ignore": ["react", "javascript", "html", "css", "scss", "sass"]
     },
     {
       "label": "React",
       "match": ["react"],
       "badge": "![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)",
-      "ignore": []
+      "ignore": ["javascript", "html", "css", "scss", "sass"]
     },
     {
       "label": "Vite",
@@ -45,7 +45,7 @@
       "ignore": ["css"]
     },
     {
-      "label": "Styled Components",
+      "label": "Styled-Components",
       "match": ["styled-components"],
       "badge": "![Styled Components](https://img.shields.io/badge/Styled%20Components-DB7093?style=for-the-badge&logo=styledcomponents&logoColor=white)",
       "ignore": ["sass", "css", "scss"]
@@ -72,7 +72,7 @@
       "ignore": ["css"]
     },
     {
-      "label": "Redux Toolkit",
+      "label": "Redux-Toolkit",
       "match": ["redux"],
       "badge": "![Redux Toolkit](https://img.shields.io/badge/Redux%20Toolkit-764ABC?style=for-the-badge&logo=redux&logoColor=white)",
       "ignore": []

@@ -1,0 +1,27 @@
+[
+  {
+    "label": "⚡️ Projets professionnels",
+    "id": "pro",
+    "prefix": ""
+  },
+  {
+    "label": "🚀 Projets personnels",
+    "id": "perso",
+    "prefix": ""
+  },
+  {
+    "label": "⚙️ Scripting",
+    "id": "script",
+    "prefix": "SCPT"
+  },
+  {
+    "label": "🧪 SandBox",
+    "id": "sandbox",
+    "prefix": "SB"
+  },
+  {
+    "label": "🎓 OpenClassrooms",
+    "id": "openclassrooms",
+    "prefix": "OC"
+  }
+]

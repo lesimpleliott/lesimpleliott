@@ -1,3 +1,13 @@
+## 2025-07-14 - feat(core): improve category detection and add last commit date
+
+- **Ajout de la date du dernier commit GitHub** (`lastUpdate`) pour chaque projet via `fetchLastCommitDate`
+- **Refactor complet de la détection des catégories** à partir du `prefix` du repo ou du propriétaire :
+  - Préfixe → détection directe via `categoryMap.json`
+  - Si aucun préfixe : repo personnel → `perso`, sinon → `pro`, fallback → `default`
+- Extraction de la logique de catégorie (`resolveCategory`) et de stack (`resolveStack`) dans des fonctions séparées
+- Séparation claire de la logique : lecture des projets existants, résolution de stack, catégorisation, logging coloré, etc.
+- Suppression de `toLowerCase()` sur les éléments de stack pour conserver les labels tels que définis dans `stackRules.json`
+
 ## 2025-07-14 - refactor(core): migrate updateProjectsJson to generateProjectsJson CLI
 
 - Suppression de `updateProjectsJson.js` au profit d’une nouvelle fonction modulaire `generateProjectsJson.js` (dossier `/core`)
