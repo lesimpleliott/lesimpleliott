@@ -1,4 +1,3 @@
-// scripts/core/generateProjectsJson.js
 import fsSync from "fs";
 import fs from "fs/promises";
 import ora from "ora";
@@ -55,22 +54,14 @@ const resolveStack = async (repoFullName) => {
 };
 
 /**
- * Retourne une ligne de log colorée en fonction du statut
- */
-const formatLogStatus = (name, status) => {
-  const green = (txt) => `\u001b[32m${txt}\u001b[0m`;
-  const blue = (txt) => `\u001b[36m${txt}\u001b[0m`;
-  const orange = (txt) => `\u001b[33m${txt}\u001b[0m`;
-
-  if (status === "new") return green(`✔ Ajouté : ${name}`);
-  if (status === "updated") return orange(`✔ Mise à jour : ${name}`);
-  return blue(`ℹ Inchangé : ${name}`);
-};
-
-/**
  * Génère un fichier projects.json enrichi à partir d'une liste de repos GitHub
+ * @param {Array} repos - Liste des dépôts
+ * @param {Function} logStatus - Fonction de log (ex: console.log(formatLogStatus(name, status)))
  */
-export const generateProjectsJson = async (repos = []) => {
+export const generateProjectsJson = async (
+  repos = [],
+  logStatus = () => {}
+) => {
   let projects = await getExistingProjects();
   let updatedCount = 0;
 
@@ -116,7 +107,7 @@ export const generateProjectsJson = async (repos = []) => {
       spinner.stop();
       process.stdout.clearLine(0);
       process.stdout.cursorTo(0);
-      console.log(formatLogStatus(repo.name, status));
+      logStatus(repo.name, status) && console.log(logStatus(repo.name, status));
     } catch (err) {
       spinner.fail(`❌ ${repo.name} : erreur d’analyse → ${err.message}`);
     }

@@ -1,30 +1,70 @@
 [
   {
-    "name": "HDP-Houlgate",
-    "url": "https://github.com/lesimpleliott/HDP-Houlgate",
-    "description": "Site vitrine de l'Hôtel de la plage à Houlgate",
+    "name": "ExcelCore",
+    "url": "https://github.com/MS-Access/ExcelCore",
+    "description": "Custom Framework Excel avec possibilité de coder sur VSCode, avec gestion des préférences UI, d’un mode développeur sécurisé, et de constantes globales.",
+    "lastUpdate": "2025-07-12",
+    "visibility": "private",
+    "archived": false,
+    "stack": [
+      "JavaScript",
+      "VBA"
+    ],
+    "stackManual": [
+      ""
+    ],
+    "category": "pro",
+    "categoryManual": "pro",
+    "previewUrl": "",
+    "websiteUrl": ""
+  },
+  {
+    "name": "msaccess-website",
+    "url": "https://github.com/MS-Access/msaccess-website",
+    "description": "msaccess-website",
+    "lastUpdate": "2025-07-11",
     "visibility": "private",
     "archived": false,
     "stack": [
       "Next JS",
-      "Tailwind CSS",
-      "NextIntl",
-      "CLSX",
-      "EmailJS",
-      "FontAwesome",
-      "MDX-JS"
+      "TypeScript",
+      "Tailwind CSS"
     ],
-    "stackManual": [],
-    "category": "perso",
+    "stackManual": [
+      ""
+    ],
+    "category": "pro",
     "categoryManual": "pro",
-    "previewUrl": "https://hdp-houlgate.vercel.app/fr",
-    "websiteUrl": "",
-    "lastUpdate": "2025-06-25"
+    "previewUrl": "",
+    "websiteUrl": ""
+  },
+  {
+    "name": "Optimized-PDF",
+    "url": "https://github.com/MS-Access/Optimized-PDF",
+    "description": "Optimized_PDF",
+    "lastUpdate": "2025-04-07",
+    "visibility": "private",
+    "archived": false,
+    "stack": [
+      "React",
+      "Vite",
+      "Electron",
+      "Tailwind CSS",
+      "FontAwesome"
+    ],
+    "stackManual": [
+      ""
+    ],
+    "category": "pro",
+    "categoryManual": "pro",
+    "previewUrl": "",
+    "websiteUrl": ""
   },
   {
     "name": "lesimpleliott",
     "url": "https://github.com/lesimpleliott/lesimpleliott",
     "description": "Config files and script for my GitHub profile.",
+    "lastUpdate": "2025-07-13",
     "visibility": "public",
     "archived": false,
     "stack": [
@@ -32,477 +72,19 @@
       "Ora",
       "Simple-Git"
     ],
-    "stackManual": [],
+    "stackManual": [
+      ""
+    ],
     "category": "perso",
-    "categoryManual": "script",
+    "categoryManual": "perso",
     "previewUrl": "",
-    "websiteUrl": "",
-    "lastUpdate": "2025-07-13"
-  },
-  {
-    "name": "OC_P10-724Events",
-    "url": "https://github.com/lesimpleliott/OC_P10-724Events",
-    "description": "OpenClassRooms / Projet 10 - Débuggez le site d'une agence d'événementiel",
-    "visibility": "public",
-    "archived": true,
-    "stack": [
-      "React",
-      "TypeScript"
-    ],
-    "stackManual": [],
-    "category": "openclassrooms",
-    "categoryManual": "openclassrooms",
-    "previewUrl": "",
-    "websiteUrl": "",
-    "lastUpdate": "2024-03-26"
-  },
-  {
-    "name": "OC_P11-ArgentBank",
-    "url": "https://github.com/lesimpleliott/OC_P11-ArgentBank",
-    "description": "OpenClassRooms / Projet 11 - Implémentez le front-end d'une application bancaire avec React",
-    "visibility": "public",
-    "archived": true,
-    "stack": [
-      "React",
-      "Vite",
-      "TypeScript",
-      "Styled-Components",
-      "Redux-Toolkit"
-    ],
-    "stackManual": [],
-    "category": "openclassrooms",
-    "categoryManual": "openclassrooms",
-    "previewUrl": "",
-    "websiteUrl": "",
-    "lastUpdate": "2024-04-23"
-  },
-  {
-    "name": "OC_P3-Booki",
-    "url": "https://github.com/lesimpleliott/OC_P3-Booki",
-    "description": "OpenClassRooms / Projet 3 - Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
-    "visibility": "public",
-    "archived": true,
-    "stack": [
-      "HTML",
-      "CSS"
-    ],
-    "stackManual": [],
-    "category": "openclassrooms",
-    "categoryManual": "openclassrooms",
-    "previewUrl": "",
-    "websiteUrl": "",
-    "lastUpdate": "2023-10-23"
-  },
-  {
-    "name": "OC_P8-Kasa",
-    "url": "https://github.com/lesimpleliott/OC_P8-Kasa",
-    "description": "OpenClassRooms / Projet 8 - Créez une application web de location immobilière avec React",
-    "visibility": "public",
-    "archived": true,
-    "stack": [
-      "React",
-      "Vite"
-    ],
-    "stackManual": [],
-    "category": "openclassrooms",
-    "categoryManual": "openclassrooms",
-    "previewUrl": "",
-    "websiteUrl": "",
-    "lastUpdate": "2024-05-02"
-  },
-  {
-    "name": "OC_P7-MenuMaker",
-    "url": "https://github.com/lesimpleliott/OC_P7-MenuMaker",
-    "description": "OpenClassRooms / Projet 7 - Planifiez le développement du site de votre client",
-    "visibility": "public",
-    "archived": true,
-    "stack": [],
-    "stackManual": [],
-    "category": "openclassrooms",
-    "categoryManual": "openclassrooms",
-    "previewUrl": "",
-    "websiteUrl": "",
-    "lastUpdate": "2024-02-09"
-  },
-  {
-    "name": "OC_P9-Nina-Carducci",
-    "url": "https://github.com/lesimpleliott/OC_P9-Nina-Carducci",
-    "description": "OpenClassRooms / Projet 9 - Optimisez le référencement d'un site de photographe",
-    "visibility": "public",
-    "archived": true,
-    "stack": [
-      "JavaScript",
-      "HTML",
-      "CSS"
-    ],
-    "stackManual": [],
-    "category": "openclassrooms",
-    "categoryManual": "openclassrooms",
-    "previewUrl": "",
-    "websiteUrl": "",
-    "lastUpdate": "2024-03-02"
-  },
-  {
-    "name": "OC_P4-ohmyfood",
-    "url": "https://github.com/lesimpleliott/OC_P4-ohmyfood",
-    "description": "OpenClassRooms / Projet 4 - Améliorez l'interface d'un site mobile avec des animations CSS",
-    "visibility": "public",
-    "archived": true,
-    "stack": [
-      "HTML",
-      "Sass"
-    ],
-    "stackManual": [],
-    "category": "openclassrooms",
-    "categoryManual": "openclassrooms",
-    "previewUrl": "",
-    "websiteUrl": "",
-    "lastUpdate": "2023-11-17"
-  },
-  {
-    "name": "OC_P5-Printit",
-    "url": "https://github.com/lesimpleliott/OC_P5-Printit",
-    "description": "OpenClassRooms / Projet 5 - Premiers pas sur le langage JavaScript",
-    "visibility": "public",
-    "archived": true,
-    "stack": [
-      "JavaScript",
-      "HTML",
-      "CSS"
-    ],
-    "stackManual": [],
-    "category": "openclassrooms",
-    "categoryManual": "openclassrooms",
-    "previewUrl": "",
-    "websiteUrl": "",
-    "lastUpdate": "2023-11-24"
-  },
-  {
-    "name": "OC_P2-Riding-Cities",
-    "url": "https://github.com/lesimpleliott/OC_P2-Riding-Cities",
-    "description": "OpenClassRooms / Projet 2 - Premiers pas sur le langage HTML",
-    "visibility": "public",
-    "archived": true,
-    "stack": [
-      "HTML",
-      "CSS"
-    ],
-    "stackManual": [],
-    "category": "openclassrooms",
-    "categoryManual": "openclassrooms",
-    "previewUrl": "",
-    "websiteUrl": "",
-    "lastUpdate": "2023-10-20"
-  },
-  {
-    "name": "OC_P6-SophieBluel",
-    "url": "https://github.com/lesimpleliott/OC_P6-SophieBluel",
-    "description": "OpenClassRooms / Projet 6 - Créez une page web dynamique avec JavaScript",
-    "visibility": "public",
-    "archived": true,
-    "stack": [
-      "JavaScript",
-      "HTML",
-      "Sass"
-    ],
-    "stackManual": [],
-    "category": "openclassrooms",
-    "categoryManual": "openclassrooms",
-    "previewUrl": "",
-    "websiteUrl": "",
-    "lastUpdate": "2024-02-16"
-  },
-  {
-    "name": "SB_axoria-NextJS-course",
-    "url": "https://github.com/lesimpleliott/SB_axoria-NextJS-course",
-    "description": "Découverte Next JS avec le cours *École du web*",
-    "visibility": "public",
-    "archived": false,
-    "stack": [
-      "Next JS",
-      "Tailwind CSS",
-      "VBA",
-      "Marked",
-      "Sanitize HTML",
-      "Slugify",
-      "bcryptjs",
-      "DOMPurify",
-      "Firebase",
-      "MongoDB",
-      "Sharp"
-    ],
-    "stackManual": [],
-    "category": "sandbox",
-    "categoryManual": "sandbox",
-    "previewUrl": "",
-    "websiteUrl": "",
-    "lastUpdate": "2025-04-14"
-  },
-  {
-    "name": "SB_Dock-Mac-OS",
-    "url": "https://github.com/lesimpleliott/SB_Dock-Mac-OS",
-    "description": "Dock Mac OS full CSS",
-    "visibility": "public",
-    "archived": false,
-    "stack": [
-      "HTML",
-      "Sass"
-    ],
-    "stackManual": [],
-    "category": "sandbox",
-    "categoryManual": "sandbox",
-    "previewUrl": "",
-    "websiteUrl": "",
-    "lastUpdate": "2024-03-15"
-  },
-  {
-    "name": "SB_eLeLab",
-    "url": "https://github.com/lesimpleliott/SB_eLeLab",
-    "description": "My Lab - Essai CSS, JS, Libraries, etc.",
-    "visibility": "public",
-    "archived": false,
-    "stack": [
-      "Next JS",
-      "Vite",
-      "TypeScript",
-      "Styled-Components",
-      "Zustand",
-      "i18Next"
-    ],
-    "stackManual": [],
-    "category": "sandbox",
-    "categoryManual": "sandbox",
-    "previewUrl": "",
-    "websiteUrl": "",
-    "lastUpdate": "2024-08-04"
-  },
-  {
-    "name": "SB_Movie_ReactApp",
-    "url": "https://github.com/lesimpleliott/SB_Movie_ReactApp",
-    "description": "OC_SideProjet / Test React App + API TMDB",
-    "visibility": "public",
-    "archived": false,
-    "stack": [
-      "React",
-      "Vite",
-      "TypeScript",
-      "Styled-Components"
-    ],
-    "stackManual": [],
-    "category": "sandbox",
-    "categoryManual": "sandbox",
-    "previewUrl": "",
-    "websiteUrl": "",
-    "lastUpdate": "2024-04-05"
-  },
-  {
-    "name": "SB_React-PeopleApp",
-    "url": "https://github.com/lesimpleliott/SB_React-PeopleApp",
-    "description": "OC_SideProjet / Test React App + API randomuser.me",
-    "visibility": "public",
-    "archived": false,
-    "stack": [
-      "React",
-      "TypeScript",
-      "Axios"
-    ],
-    "stackManual": [],
-    "category": "sandbox",
-    "categoryManual": "sandbox",
-    "previewUrl": "",
-    "websiteUrl": "",
-    "lastUpdate": "2024-04-19"
-  },
-  {
-    "name": "SB_ReactWorld",
-    "url": "https://github.com/lesimpleliott/SB_ReactWorld",
-    "description": "OC_SideProjet / FromScratch - Ma première app React",
-    "visibility": "public",
-    "archived": false,
-    "stack": [
-      "React",
-      "TypeScript",
-      "Axios"
-    ],
-    "stackManual": [],
-    "category": "sandbox",
-    "categoryManual": "sandbox",
-    "previewUrl": "",
-    "websiteUrl": "",
-    "lastUpdate": "2024-02-13"
-  },
-  {
-    "name": "SCPT_ExportAlbums",
-    "url": "https://github.com/lesimpleliott/SCPT_ExportAlbums",
-    "description": "Création d'un fichier JSON à partir des photos à partir de répertoire",
-    "visibility": "public",
-    "archived": false,
-    "stack": [
-      "JavaScript",
-      "Progress",
-      "Sharp"
-    ],
-    "stackManual": [],
-    "category": "script",
-    "categoryManual": "script",
-    "previewUrl": "",
-    "websiteUrl": "",
-    "lastUpdate": "2024-07-04"
-  },
-  {
-    "name": "SCPT_Folder-Structure-Generatooooor",
-    "url": "https://github.com/lesimpleliott/SCPT_Folder-Structure-Generatooooor",
-    "description": "Script pour générer l'arborescence d'un dossier",
-    "visibility": "public",
-    "archived": false,
-    "stack": [
-      "JavaScript",
-      "Inquirer",
-      "Clipboardy",
-      "fs-extra"
-    ],
-    "stackManual": [],
-    "category": "script",
-    "categoryManual": "script",
-    "previewUrl": "",
-    "websiteUrl": "",
-    "lastUpdate": "2025-06-25"
-  },
-  {
-    "name": "SCPT_PDF2JPG",
-    "url": "https://github.com/lesimpleliott/SCPT_PDF2JPG",
-    "description": "Script pour convertir un PDF en JPG",
-    "visibility": "public",
-    "archived": false,
-    "stack": [
-      "JavaScript"
-    ],
-    "stackManual": [],
-    "category": "script",
-    "categoryManual": "script",
-    "previewUrl": "",
-    "websiteUrl": "",
-    "lastUpdate": "2025-06-25"
-  },
-  {
-    "name": "SCPT_Starter-kit-React",
-    "url": "https://github.com/lesimpleliott/SCPT_Starter-kit-React",
-    "description": "My starter-kit React avec lib (Tailwind CSS, i18Next, Zustand, etc.)",
-    "visibility": "public",
-    "archived": false,
-    "stack": [
-      "React",
-      "Vite",
-      "TypeScript",
-      "Prompts"
-    ],
-    "stackManual": [],
-    "category": "script",
-    "categoryManual": "script",
-    "previewUrl": "",
-    "websiteUrl": "",
-    "lastUpdate": "2024-09-16"
-  },
-  {
-    "name": "SCPT_WebScreen-Automator",
-    "url": "https://github.com/lesimpleliott/SCPT_WebScreen-Automator",
-    "description": "Automatisation pour créér des captures d'écran de sites web selon différents viewports",
-    "visibility": "public",
-    "archived": false,
-    "stack": [
-      "JavaScript"
-    ],
-    "stackManual": [],
-    "category": "script",
-    "categoryManual": "script",
-    "previewUrl": "",
-    "websiteUrl": "",
-    "lastUpdate": "2024-11-03"
-  },
-  {
-    "name": "Tekkare-dashboard",
-    "url": "https://github.com/lesimpleliott/Tekkare-dashboard",
-    "description": "Test technique Tekkare",
-    "visibility": "public",
-    "archived": false,
-    "stack": [
-      "Next JS",
-      "Vite",
-      "TypeScript",
-      "Tailwind CSS",
-      "Zustand",
-      "i18Next",
-      "Recharts"
-    ],
-    "stackManual": [],
-    "category": "perso",
-    "categoryManual": "🚀 Projets personnels",
-    "previewUrl": "https://tekkare.elegarage.fr",
-    "websiteUrl": "",
-    "lastUpdate": "2024-09-23"
-  },
-  {
-    "name": "SB_TimeKeeper",
-    "url": "https://github.com/lesimpleliott/SB_TimeKeeper",
-    "description": "Test Next + API + MongoDB",
-    "visibility": "public",
-    "archived": false,
-    "stack": [
-      "Next JS",
-      "TypeScript",
-      "Tailwind CSS",
-      "Redux-Toolkit",
-      "MongoDB"
-    ],
-    "stackManual": [],
-    "category": "sandbox",
-    "categoryManual": "sandbox",
-    "previewUrl": "",
-    "websiteUrl": "",
-    "lastUpdate": "2024-11-07"
-  },
-  {
-    "name": "Wedding-KatElio_Photos",
-    "url": "https://github.com/lesimpleliott/Wedding-KatElio_Photos",
-    "description": "Site de partage des photos du mariage de Kat et Elio / mot de passe : demo",
-    "visibility": "public",
-    "archived": false,
-    "stack": [
-      "React",
-      "Vite",
-      "TypeScript",
-      "Styled-Components",
-      "Redux-Toolkit"
-    ],
-    "stackManual": [],
-    "category": "perso",
-    "categoryManual": "🚀 Projets personnels",
-    "previewUrl": "https://demo.katelio.fr",
-    "websiteUrl": "",
-    "lastUpdate": "2024-07-24"
-  },
-  {
-    "name": "Wedding-KatElio_RSVP",
-    "url": "https://github.com/lesimpleliott/Wedding-KatElio_RSVP",
-    "description": "Site de RSVP pour le mariage de Kat et Elio / Mot de passe : pinktouch ",
-    "visibility": "public",
-    "archived": false,
-    "stack": [
-      "JavaScript",
-      "HTML",
-      "Sass"
-    ],
-    "stackManual": [],
-    "category": "perso",
-    "categoryManual": "🚀 Projets personnels",
-    "previewUrl": "https://lesimpleliott.github.io/Wedding-KatElio_RSVP/",
-    "websiteUrl": "",
-    "lastUpdate": "2024-06-11"
+    "websiteUrl": ""
   },
   {
     "name": "MyPortfolio",
     "url": "https://github.com/lesimpleliott/MyPortfolio",
     "description": "Portfolio Eliott Lesimple / eLeGarage",
+    "lastUpdate": "2024-10-25",
     "visibility": "public",
     "archived": false,
     "stack": [
@@ -513,82 +95,12 @@
       "Zustand",
       "EmailJS"
     ],
-    "stackManual": [],
+    "stackManual": [
+      ""
+    ],
     "category": "perso",
-    "categoryManual": "🚀 Projets personnels",
+    "categoryManual": "perso",
     "previewUrl": "",
-    "websiteUrl": "https://elegarage.fr",
-    "lastUpdate": "2024-10-25"
-  },
-  {
-    "name": "SCPT_Illustrator-Tools",
-    "url": "https://github.com/lesimpleliott/SCPT_Illustrator-Tools",
-    "description": "Collection de scripts JavaScript pour **Adobe Illustrator CC 2020+**, conçus pour améliorer le flux de travail",
-    "visibility": "public",
-    "archived": false,
-    "stack": [
-      "JavaScript"
-    ],
-    "stackManual": [],
-    "category": "script",
-    "categoryManual": "script",
-    "previewUrl": "",
-    "websiteUrl": "",
-    "lastUpdate": "2025-07-08"
-  },
-  {
-    "name": "msaccess-website",
-    "url": "https://github.com/MS-Access/msaccess-website",
-    "description": "msaccess-website",
-    "visibility": "private",
-    "archived": false,
-    "stack": [
-      "Next JS",
-      "TypeScript",
-      "Tailwind CSS"
-    ],
-    "stackManual": [],
-    "category": "pro",
-    "categoryManual": "pro",
-    "previewUrl": "",
-    "websiteUrl": "",
-    "lastUpdate": "2025-07-11"
-  },
-  {
-    "name": "Optimized-PDF",
-    "url": "https://github.com/MS-Access/Optimized-PDF",
-    "description": "Optimized_PDF",
-    "visibility": "private",
-    "archived": false,
-    "stack": [
-      "React",
-      "Vite",
-      "Electron",
-      "Tailwind CSS",
-      "FontAwesome"
-    ],
-    "stackManual": [],
-    "category": "pro",
-    "categoryManual": "pro",
-    "previewUrl": "",
-    "websiteUrl": "",
-    "lastUpdate": "2025-04-07"
-  },
-  {
-    "name": "ExcelCore",
-    "url": "https://github.com/MS-Access/ExcelCore",
-    "description": "Custom Framework Excel avec possibilité de coder sur VSCode, avec gestion des préférences UI, d’un mode développeur sécurisé, et de constantes globales.",
-    "visibility": "private",
-    "archived": false,
-    "stack": [
-      "JavaScript",
-      "VBA"
-    ],
-    "stackManual": [],
-    "category": "pro",
-    "categoryManual": "pro",
-    "previewUrl": "",
-    "websiteUrl": "",
-    "lastUpdate": "2025-07-12"
+    "websiteUrl": ""
   }
 ]

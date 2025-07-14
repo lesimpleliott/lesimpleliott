@@ -1,3 +1,27 @@
+## 2025-07-14 - refactor(cli): unify CLI structure and add centralized helpers
+
+- Renommage des anciens fichiers `scenarioXXX.js` :
+  - `scenarioFetch.js` → `fetchFromGithub.js`
+  - `scenarioRename.js` → `renameGithubRepo.js`
+  - `scenarioUpdate.js` → `refreshJson.js`
+  - `scenarioDetectStack.js` → `analyzeStacks.js`
+- Uniformisation de la structure des scripts :
+  - Suppression des duplications de couleurs, statuts et formats
+  - Affichage standardisé via `cliCommon.js`
+  - Utilisation de `ora` + `clearLine` pour chaque CLI
+  - Meilleure gestion des erreurs et du spinner dans tous les cas
+- Création de `cliCommon.js` dans `utils/` :
+  - Couleurs terminal (`green`, `blue`, `orange`, `grey`, `red`, `bold`)
+  - `formatStatus(name, status)` pour l'affichage unifié des statuts
+  - `parseFullName(input)` pour sécuriser les entrées de type `user/repo`
+  - `findProjectInJson(projects, fullName)` pour localiser un projet dans `projects.json`
+- Refonte de `refreshJson.js` :
+  - Supprime la gestion de `user/repo` en argument
+  - Se base désormais exclusivement sur tous les projets listés dans `projects.json`
+  - Utilise `generateProjectsJson()` pour détecter les mises à jour
+  - Affiche les statuts avec `formatStatus`
+- Mise à jour de tous les scripts pour utiliser les helpers de `cliCommon.js`
+
 ## 2025-07-14 - feat(core): improve category detection and add last commit date
 
 - **Ajout de la date du dernier commit GitHub** (`lastUpdate`) pour chaque projet via `fetchLastCommitDate`
