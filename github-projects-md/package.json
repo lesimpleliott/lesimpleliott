@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "diff": "git diff --cached | pbcopy && echo '✅ Diff copied to clipboard !'",
-    "fetch": "node scripts/cli/scenarioEdit.js",
+    "fetch": "node scripts/cli/scenarioFetch.js",
     "rename": "node scripts/cli/scenarioRename.js",
     "detectStack": "node scripts/cli/scenarioDetectStack.js",
     "generate": "node scripts/core/generateReadme.js"

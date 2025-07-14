@@ -1,3 +1,18 @@
+## 2025-07-14 - refactor(core): migrate updateProjectsJson to generateProjectsJson CLI
+
+- Suppression de `updateProjectsJson.js` au profit d’une nouvelle fonction modulaire `generateProjectsJson.js` (dossier `/core`)
+- Nouvelle CLI `scenarioFetch.js` dans `/cli` pour gérer :
+  - `npm run fetch user` → tous les dépôts d’un utilisateur
+  - `npm run fetch user/repo` → un dépôt spécifique
+- Amélioration de la logique d’analyse :
+  - Comparaison intelligente (détection des projets inchangés)
+  - Affichage console en couleur :
+    - 🟢 Ajouté
+    - 🟠 Mis à jour
+    - 🔵 Inchangé
+  - Intégration de la date `updated_at` de GitHub (champ `lastUpdate`)
+  - Formatage propre et cohérent du fichier `projects.json`
+
 ## 2025-07-14 - feat(stack-detection): split main/secondary stack with improved match logic
 
 - Ajout de `mainStack` et `secondaryStack` dans le profil de stack.

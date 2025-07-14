@@ -1,7 +1,8 @@
+// scripts/cli/scenarioFetch.js
 import "dotenv/config";
 import { PROJECTS_JSON_PATH } from "../config/paths.js";
+import { generateProjectsJson } from "../core/generateProjectsJson.js";
 import { fetchAllRepos, fetchRepo } from "../github/githubClient.js";
-import { updateProjectsJson } from "../github/updateProjectsJson.js";
 import { openInEditor } from "../utils/openInEditor.js";
 import { askYesNo } from "../utils/promptYesNo.js";
 
@@ -30,9 +31,8 @@ try {
     process.exit(1);
   }
 
-  const projects = await updateProjectsJson(repos);
-
-  console.log(`\n📦 projects.json mis à jour avec ${projects.length} entrées.`);
+  const count = await generateProjectsJson(repos);
+  console.log(`\n📦 Fichier mis à jour avec ${count} projet(s).`);
 
   const edit = await askYesNo(
     "Souhaitez-vous éditer les données maintenant ? (O/N)"
